@@ -1,0 +1,1334 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Taliha Ceren Sahin, CRM, Marketing Ops &amp; Demand Generation Manager in Paris: from website and forms to CRM, scoring, automation and sales-ready pipeline.">
+<title>Taliha Ceren Sahin | CRM, Marketing Ops & Demand Gen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream:#f8f2ec; --paper:#fffbf7; --ink:#2a2220; --muted:#8c7c76;
+    --line:#e7dcd4; --blush:#e2879a; --blush-deep:#c76c81; --blush-tint:#f4e3e1;
+    --sage:#aab596; --sage-deep:#7f8c6a;
+    --serif:"Fraunces",Georgia,serif; --sans:"Plus Jakarta Sans",Arial,sans-serif;
+    --mono:"Space Mono",monospace;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans)}
+  a{color:inherit;text-decoration:none} button{font:inherit;cursor:pointer}
+  .wrap{width:min(1180px,calc(100% - 64px));margin-inline:auto}
+  [data-i18n],[data-i18n-html]{}
+  [lang-hide]{display:none}
+
+  /* ===== NAV ===== */
+  .nav{min-height:88px;display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:20px;border-bottom:1px solid var(--line);font-size:13px}
+  .identity{display:flex;align-items:center;gap:14px;font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.08em}
+  .identity b{display:grid;place-items:center;width:34px;height:34px;border:1px solid;border-radius:50%;letter-spacing:0}
+  .nav-links{display:flex;gap:26px}.nav-links a:hover{text-decoration:underline;text-underline-offset:6px}
+  .nav-right{display:flex;align-items:center;gap:18px}
+  .lang-toggle{display:flex;border:1px solid var(--ink);border-radius:20px;overflow:hidden;font:600 10px var(--mono)}
+  .lang-toggle button{padding:8px 12px;background:transparent;border:0;color:var(--ink);letter-spacing:.06em}
+  .lang-toggle button.active{background:var(--ink);color:var(--paper)}
+  .contact-link{font-weight:600;white-space:nowrap}
+
+  /* ===== HERO ===== */
+  .hero{padding:82px 0 46px}
+  .kicker,.eyebrow{font:500 10px var(--mono);text-transform:uppercase;letter-spacing:.13em}
+  .kicker{display:flex;align-items:center;gap:11px}
+  .dot{width:9px;height:9px;background:var(--blush-deep);border-radius:50%;box-shadow:0 0 0 5px rgba(199,108,129,.16)}
+  .hero-grid{display:grid;grid-template-columns:minmax(0,2.1fr) minmax(280px,.75fr);gap:78px;align-items:end;margin-top:38px}
+  h1{max-width:900px;margin:0;font:400 clamp(52px,6.4vw,96px)/.92 var(--serif);letter-spacing:-.04em}
+  h1 em{color:var(--blush-deep);font-weight:400;font-style:italic}
+  .hero-side{padding-bottom:8px}.hero-side p{margin:0 0 28px;color:var(--muted);font-size:15px;line-height:1.7}
+  .actions{display:flex;flex-wrap:wrap;gap:10px}
+  .button{min-height:48px;padding:0 20px;border-radius:30px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-size:12px;font-weight:600;transition:.2s;border:1px solid var(--ink)}
+  .button:hover{transform:translateY(-2px)}
+  .button.primary{background:var(--blush-deep);color:#fff;border-color:var(--blush-deep)}
+  .button.primary:hover{background:var(--ink);border-color:var(--ink)}
+  .button.secondary{border:1px solid var(--ink);background:transparent;color:var(--ink)}
+  .button.secondary:hover{background:var(--ink);color:var(--paper)}
+  .metrics{display:grid;grid-template-columns:repeat(3,1fr);margin-top:68px;border-block:1px solid var(--line)}
+  .metrics div{display:flex;align-items:baseline;gap:14px;padding:22px 0}
+  .metrics div+div{border-left:1px solid var(--line);padding-left:28px}
+  .metrics strong{font:400 30px var(--serif)}
+  .metrics span{color:var(--muted);font:400 10px var(--mono);text-transform:uppercase;letter-spacing:.08em}
+
+  /* ===== JOURNEY STRIP ===== */
+  .journey{background:var(--blush-tint);color:var(--ink);border-block:1px solid var(--line)}
+  .journey-track{display:grid;grid-template-columns:repeat(5,1fr);min-height:112px}
+  .step{position:relative;display:flex;flex-direction:column;justify-content:center;gap:11px;border-left:1px solid var(--line);padding:0 25px}
+  .step:last-child{background:var(--blush);color:#fff;border-right:1px solid var(--line)}
+  .step span{font:400 9px var(--mono);opacity:.6}.step b{font-size:14px;font-weight:500}
+  .step i{position:absolute;right:-8px;color:var(--blush-deep);font-style:normal;z-index:1}
+
+  /* ===== SECTIONS ===== */
+  .section{padding:110px 0}
+  .heading{display:grid;grid-template-columns:1.2fr .7fr;gap:60px;align-items:end;margin-bottom:48px}
+  .heading h2{margin:14px 0 0;font:400 clamp(44px,5.2vw,72px)/.95 var(--serif);letter-spacing:-.03em}
+  .heading>p{max-width:460px;margin:0 0 8px;color:var(--muted);line-height:1.7}
+
+  /* ===== SERVICES ===== */
+  .services{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--paper)}
+  .service{padding:30px 24px;border-right:1px solid var(--line);min-height:280px;display:flex;flex-direction:column}
+  .service:last-child{border-right:0}
+  .service span.num{font:400 10px var(--mono);color:var(--muted)}
+  .service h3{margin:18px 0 12px;font:400 26px var(--serif);letter-spacing:-.01em;color:var(--ink)}
+  .service ul{margin:0;padding:0;list-style:none;font-size:12.5px;color:var(--muted);line-height:1.9;flex:1}
+  .service ul li{padding-left:14px;position:relative}
+  .service ul li::before{content:"·";position:absolute;left:0;color:var(--blush-deep);font-weight:700}
+  .service .tag{margin-top:16px;align-self:flex-start;font:600 9px var(--mono);text-transform:uppercase;letter-spacing:.07em;color:var(--blush-deep);border:1px solid var(--blush-deep);border-radius:20px;padding:6px 12px}
+
+  /* ===== DEMO TABS ===== */
+  .demo-tabs{display:flex;gap:2px;margin-bottom:0;border:1px solid var(--line);border-bottom:0;border-radius:18px 18px 0 0;overflow:hidden}
+  .demo-tab{flex:1;padding:16px 18px;background:var(--paper);border:0;border-right:1px solid var(--line);font:600 11px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--muted);text-align:left}
+  .demo-tab:last-child{border-right:0}
+  .demo-tab.active{background:var(--blush-deep);color:#fff}
+  .demo-tab b{display:block;font:400 15px var(--sans);color:inherit;margin-top:4px;letter-spacing:0;text-transform:none}
+  .demo-panel{display:none;border:1px solid var(--line);border-radius:0 0 18px 18px;background:var(--paper);overflow:hidden}
+  .demo-panel.active{display:block}
+
+  /* Router demo */
+  .router{display:grid;grid-template-columns:1.15fr .85fr}
+  .inputs,.output{padding:42px}
+  .group{margin:0 0 26px;padding:0;border:0}
+  .group legend{width:100%;margin-bottom:12px;color:var(--muted);font:600 10px var(--mono);text-transform:uppercase;letter-spacing:.1em}
+  .choices{display:grid;grid-template-columns:repeat(3,1fr);border-radius:10px;overflow:hidden;border:1px solid var(--line)}
+  .choice{height:48px;border:1px solid var(--line);border-width:0 1px 0 0;background:transparent;color:var(--ink);font-size:12px;cursor:pointer;transition:.18s}
+  .choice:last-child{border-right:0}
+  .choice:hover{background:var(--blush-tint)}
+  .choice.active{background:var(--blush-deep);border-color:var(--blush-deep);color:#fff}
+  .model-note{max-width:540px;margin:8px 0 0;color:var(--muted);font-size:11px;line-height:1.65}
+  .output{display:flex;flex-direction:column;min-height:438px;background:var(--blush-tint);color:var(--ink);border-left:1px solid var(--line)}
+  .score-head{display:flex;justify-content:space-between;align-items:flex-start;font:600 10px var(--mono);text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+  .score-head strong{font:400 68px/.8 var(--serif);letter-spacing:-.02em;color:var(--ink)}
+  .score-head small{color:var(--muted);font:400 12px var(--mono)}
+  .score-track{height:6px;margin:23px 0 35px;background:#e2879a33;border-radius:4px;overflow:hidden}
+  .score-track span{display:block;height:100%;width:80%;background:var(--blush-deep);transition:width .45s cubic-bezier(.2,.8,.2,1)}
+  dl{margin:0}dl div{display:grid;grid-template-columns:90px 1fr;gap:20px;padding:17px 0;border-top:1px solid var(--line)}
+  dt{color:var(--muted);font:600 10px var(--mono);text-transform:uppercase;letter-spacing:.08em}
+  dd{margin:0;font-size:14px;color:var(--ink)}.highlight{color:var(--blush-deep);font-weight:700}
+  .logic{margin-top:auto;padding-top:26px;color:var(--muted);font:400 10px/1.7 var(--mono)}.logic span{color:var(--blush-deep);font-weight:600}
+
+  /* Attribution demo */
+  .attrib{padding:42px}
+  .attrib-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .attrib-col{padding:28px;background:var(--paper)}
+  .attrib-col:first-child{border-right:1px solid var(--line);background:var(--cream)}
+  .attrib-col h4{margin:0 0 6px;font:400 22px var(--serif);color:var(--ink)}
+  .attrib-col p.sub{margin:0 0 20px;color:var(--muted);font-size:12px;line-height:1.6}
+  .blind-list{list-style:none;margin:0;padding:0;font:500 12px var(--mono)}
+  .blind-list li{padding:10px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:var(--muted)}
+  .blind-list li:first-child{border-top:0}
+  .tracked-row{display:grid;grid-template-columns:70px 1fr auto;align-items:center;gap:12px;padding:10px 0;border-top:1px solid var(--line);font-size:12px}
+  .tracked-row:first-child{border-top:0}
+  .tracked-row .chan{font:600 10px var(--mono);text-transform:uppercase;color:var(--muted)}
+  .tracked-bar{height:8px;background:var(--line);border-radius:6px;position:relative;overflow:hidden}
+  .tracked-bar span{display:block;height:100%;background:var(--blush-deep);border-radius:6px}
+  .tracked-row .val{font:600 11px var(--mono);text-align:right;color:var(--ink)}
+  .attrib-note{margin:20px 0 0;color:var(--muted);font-size:11px;line-height:1.65;max-width:640px}
+
+  /* Segmentation demo, simplified: pick an audience, see who's in it and what happens next */
+  .segdemo{padding:42px}
+  .seg-controls{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px}
+  .seg-btn{padding:11px 18px;border:1px solid var(--line);border-radius:24px;background:var(--paper);font:600 11px var(--mono);text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+  .seg-btn.active{background:var(--blush-deep);border-color:var(--blush-deep);color:#fff}
+  .seg-visual{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;margin-bottom:24px}
+  .seg-ring{position:relative;width:180px;height:180px;margin:0 auto;border-radius:50%;display:flex;align-items:center;justify-content:center}
+  .seg-ring svg{position:absolute;inset:0;transform:rotate(-90deg)}
+  .seg-ring-label{position:relative;text-align:center}
+  .seg-ring-label strong{display:block;font:400 40px var(--serif);color:var(--ink)}
+  .seg-ring-label span{font:600 9px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+  .seg-desc{display:flex;flex-direction:column;gap:14px}
+  .seg-desc .who{font:400 20px var(--serif);color:var(--ink)}
+  .seg-desc .what{color:var(--muted);font-size:13px;line-height:1.7}
+  .seg-action{padding:16px 20px;border-radius:12px;background:var(--blush-tint);color:var(--ink);font:500 12px/1.7 var(--sans);border:1px solid var(--line)}
+  .seg-action b{color:var(--blush-deep)}
+
+  /* ===== CASES ===== */
+  .cases-section{background:var(--cream)}
+  .cases-section .heading>p{color:var(--muted)}
+  .cases{display:flex;flex-direction:column;gap:22px}
+  .case{padding:38px;border:1px solid var(--line);border-radius:18px;background:var(--paper)}
+  .case-top{display:flex;justify-content:space-between;color:var(--muted);font:500 10px var(--mono);text-transform:uppercase;letter-spacing:.08em}
+  .case h3{margin:22px 0 10px;font:400 clamp(32px,3.8vw,50px)/1.05 var(--serif);color:var(--ink)}
+  .problem{max-width:660px;color:var(--muted);line-height:1.7}
+  .star-grid{margin:26px 0 8px;border-top:1px solid var(--line)}
+  .star-row{display:grid;grid-template-columns:120px 1fr;gap:24px;padding:18px 0;border-bottom:1px solid var(--line)}
+  .star-label{font:600 10px var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--blush-deep);padding-top:2px}
+  .star-row p{margin:0;color:var(--muted);line-height:1.7;max-width:640px}
+  .star-row p b{color:var(--ink)}
+  .star-row-result{background:var(--blush-tint);border-radius:12px;padding:18px 20px;border-bottom:0;margin-top:2px}
+  .action-detail{max-width:640px}
+  .action-example{margin:16px 0 8px;font:600 11px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--blush-deep)}
+  .action-list{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+  .action-list li{position:relative;padding-left:22px;color:var(--muted);line-height:1.65;font-size:13.5px}
+  .action-list li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--blush-deep)}
+  .star-row-result .star-label{color:var(--blush-deep)}
+  .star-row-result p{color:var(--ink);font-weight:500}
+  .case-metric{display:flex;align-items:baseline;gap:14px;margin-top:22px}
+  .case-metric strong{color:var(--blush-deep);font:400 44px/.8 var(--serif)}
+  .case-metric span{color:var(--muted);font:500 10px var(--mono);text-transform:uppercase;letter-spacing:.07em}
+  .micro{display:flex;justify-content:flex-start;gap:8px;margin-top:14px}
+  .micro span{padding:7px 10px;border:1px solid var(--line);border-radius:20px;color:var(--muted);font:500 9px var(--mono);text-transform:uppercase}
+  .case-cta{margin-top:26px;text-align:right}
+  .case-cta a{font:600 10px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--blush-deep);border-bottom:1px solid var(--blush-deep);padding-bottom:2px}
+
+  /* ===== STACK ===== */
+  .stack{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--paper)}
+  .stack article{min-height:205px;padding:24px 21px;border-right:1px solid var(--line);transition:.22s}
+  .stack article:last-child{border-right:0}
+  .stack article:hover{background:var(--blush-tint)}
+  .stack article>span{font:400 10px var(--mono);opacity:.5;color:var(--muted)}
+  .stack h3{margin:60px 0 10px;font:400 25px var(--serif);color:var(--ink)}
+  .stack p{margin:0;color:var(--muted);font:400 10px/1.7 var(--mono)}
+  .stack article:hover p{color:var(--blush-deep)}
+
+  /* ===== PRINCIPLES ===== */
+  .principles{padding:0 0 110px}
+  .principle-grid{display:grid;grid-template-columns:repeat(2,1fr);margin-top:20px;border-top:1px solid var(--line)}
+  .principle-grid p{margin:0;padding:23px 0;border-bottom:1px solid var(--line);font:400 24px var(--serif)}
+  .principle-grid p:nth-child(odd){padding-right:40px}
+  .principle-grid p:nth-child(even){padding-left:40px;border-left:1px solid var(--line)}
+
+  /* ===== CONTACT FORM ===== */
+  .contact-section{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}
+  .contact-copy p{color:var(--muted);line-height:1.75;max-width:420px}
+  .contact-copy .direct{margin-top:30px;display:flex;flex-direction:column;gap:10px;font:500 12px var(--mono)}
+  .contact-copy .direct a{border-bottom:1px solid var(--line);padding-bottom:8px;display:flex;justify-content:space-between}
+  form.leadform{display:flex;flex-direction:column;gap:16px}
+  .field{display:flex;flex-direction:column;gap:8px}
+  .field label{font:500 10px var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+  .field input,.field textarea,.field select{border:1px solid var(--line);border-radius:10px;background:var(--cream);padding:13px 14px;font:400 14px var(--sans);color:var(--ink)}
+  .field input:focus,.field textarea:focus,.field select:focus{outline:2px solid var(--blush-deep);outline-offset:1px;border-color:var(--ink)}
+  .field textarea{resize:vertical;min-height:96px}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .submit-btn{margin-top:6px;min-height:52px;border-radius:30px;background:var(--blush-deep);color:#fff;border:1px solid var(--blush-deep);font:600 12px var(--mono);text-transform:uppercase;letter-spacing:.06em}
+  .submit-btn:hover{background:var(--ink);border-color:var(--ink)}
+  .form-note{color:var(--muted);font-size:11px;line-height:1.6;margin:0}
+  .form-status{margin:0;font:600 12px var(--mono);min-height:16px}
+  .hp-field{position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden}
+
+  /* ===== FOOTER ===== */
+  footer{background:var(--ink);color:var(--cream);padding:85px 0 28px}
+  .footer-grid{display:grid;grid-template-columns:1fr 330px;gap:75px;align-items:end}
+  footer .eyebrow{color:var(--blush)}
+  footer h2{margin:24px 0 0;font:400 clamp(42px,5vw,68px)/1.05 var(--serif);letter-spacing:-.02em}
+  footer h2 em{color:var(--blush);font-style:italic}
+  .footer-links{border-top:1px solid rgba(248,242,236,.25)}
+  .footer-links a{display:flex;justify-content:space-between;padding:16px 0;border-bottom:1px solid rgba(248,242,236,.25);font:600 11px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--cream)}
+  .footer-links a:hover{color:var(--blush)}
+  .copyright{display:flex;justify-content:space-between;margin-top:80px;padding-top:18px;border-top:1px solid rgba(248,242,236,.18);font:400 9px var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+
+  @media(max-width:980px){
+    .services{grid-template-columns:repeat(2,1fr)}
+    .service:nth-child(2){border-right:0}
+    .service:nth-child(3){border-right:1px solid var(--line)}
+    .attrib-grid{grid-template-columns:1fr}
+    .attrib-col:first-child{border-right:0;border-bottom:1px solid var(--line)}
+    .contact-grid{grid-template-columns:1fr}
+  }
+  @media(max-width:900px){
+    .wrap{width:min(100% - 36px,720px)}
+    .nav{grid-template-columns:1fr auto;row-gap:10px}
+    .nav-links{display:none}
+    .hero-grid,.heading,.router,.footer-grid{grid-template-columns:1fr;gap:34px}
+    .hero{padding-top:62px}
+    h1{font-size:clamp(48px,13vw,72px)}
+    .journey-track{overflow-x:auto;grid-template-columns:repeat(5,180px);width:100%;padding-left:18px}
+    .section{padding:80px 0}
+    .stack{grid-template-columns:repeat(2,1fr)}
+    .stack article{border-bottom:1px solid var(--line)}
+    .stack article:nth-child(even){border-right:0}
+    .stack article:last-child{grid-column:1/-1;min-height:160px}
+    .demo-tabs{flex-direction:column;border-bottom:1px solid var(--line);border-radius:18px 18px 0 0}
+    .demo-tab{border-right:0;border-bottom:1px solid var(--line)}
+    .demo-tab:last-child{border-bottom:0}
+    .form-row{grid-template-columns:1fr}
+  }
+  @media(max-width:600px){
+    .wrap{width:calc(100% - 28px)}
+    .nav{min-height:72px}
+    .identity span,.contact-link{font-size:9px}
+    .hero{padding:52px 0 26px}
+    h1{font-size:44px}
+    .hero-grid{margin-top:27px}
+    .metrics{grid-template-columns:1fr}
+    .metrics div,.metrics div+div{padding:14px 0;border-left:0;border-top:1px solid var(--line)}
+    .metrics div:first-child{border-top:0}
+    .heading h2{font-size:42px}
+    .inputs,.output{padding:26px 19px}
+    .choices{grid-template-columns:1fr}
+    .choice{margin:0 0 -1px}
+    .star-row{grid-template-columns:1fr;gap:6px}
+    .star-row-result{padding:16px}
+    .micro{justify-content:flex-start}
+    .stack,.principle-grid{grid-template-columns:1fr}
+    .stack article,.stack article:nth-child(even),.stack article:last-child{grid-column:auto;border-right:0}
+    .principle-grid p,.principle-grid p:nth-child(odd),.principle-grid p:nth-child(even){padding:19px 0;border-left:0}
+    footer h2{font-size:48px}
+    .copyright{flex-direction:column;gap:8px;margin-top:55px}
+  }
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important}}
+  /* ===== LIVE WORK ===== */
+  .work-filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+  .work-filter{padding:9px 14px;border:1px solid var(--line);border-radius:20px;background:transparent;color:var(--ink);font:600 10px var(--mono);text-transform:uppercase;letter-spacing:.06em;transition:.2s}
+  .work-filter:hover{border-color:var(--blush-deep)}
+  .work-filter.active{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+  .work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+  .work-card{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:18px;background:var(--paper);overflow:hidden;transition:transform .25s,box-shadow .25s,opacity .25s}
+  .work-card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(42,34,32,.08)}
+  .work-card.hidden{display:none}
+  .work-visual{position:relative;display:grid;place-items:center;height:190px;border-bottom:1px solid var(--line);overflow:hidden}
+  .work-visual.logo-bg{background:linear-gradient(135deg,#fff 0%,var(--blush-tint) 100%)}
+  .work-visual.logo-bg img{max-width:62%;max-height:96px;object-fit:contain}
+  .work-visual.banner-bg{background:var(--ink)}
+  .work-visual.banner-bg img{width:100%;height:100%;object-fit:cover}
+  .work-visual .wordmark{font:400 34px/1 var(--serif);letter-spacing:-.02em;color:var(--ink);padding:0 24px;text-align:center}
+  .work-visual.banner-bg .wordmark{color:var(--cream)}
+  .work-visual a.cover{position:absolute;inset:0}
+  .work-body{display:flex;flex-direction:column;gap:12px;padding:26px 28px 28px;flex:1}
+  .work-body h3{margin:0;font:400 26px/1.1 var(--serif);letter-spacing:-.01em}
+  .work-sub{font:500 10px var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--blush-deep)}
+  .work-desc{margin:0;color:var(--muted);line-height:1.65;font-size:14px}
+  .work-chips{display:flex;flex-wrap:wrap;gap:6px}
+  .work-chips span{padding:6px 10px;border:1px solid var(--line);border-radius:20px;font:500 9px var(--mono);text-transform:uppercase;color:var(--muted)}
+  .work-panel{display:none;margin:0;padding:14px 0 0;list-style:none;border-top:1px dashed var(--line)}
+  .work-card.open .work-panel{display:flex;flex-direction:column;gap:8px}
+  .work-panel li{position:relative;padding-left:20px;font-size:13.5px;line-height:1.55;color:var(--ink)}
+  .work-panel li::before{content:"✓";position:absolute;left:0;color:var(--blush-deep);font-weight:700}
+  .work-actions{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:auto;padding-top:8px}
+  .work-toggle{padding:0;border:0;background:none;color:var(--ink);font:600 10px var(--mono);text-transform:uppercase;letter-spacing:.06em;border-bottom:1px solid var(--ink);padding-bottom:2px}
+  .work-open{font:600 10px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--blush-deep);border-bottom:1px solid var(--blush-deep);padding-bottom:2px}
+  .work-note{margin:18px 0 0;font:400 10px var(--mono);color:var(--muted)}
+  @media(max-width:760px){.work-grid{grid-template-columns:1fr}.work-visual{height:160px}}
+</style>
+<script>function workFallback(img){var s=document.createElement('span');s.className='wordmark';s.textContent=img.alt;img.replaceWith(s);}</script>
+</head>
+<body>
+  <header class="nav wrap">
+    <a class="identity" href="#top"><b>TC</b><span data-i18n="nav.tag">Website → CRM → Pipeline</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#router" data-i18n="nav.demos">Demos</a>
+      <a href="#cases" data-i18n="nav.cases">Cases</a>
+      <a href="#work" data-i18n="nav.work">Work</a>
+      <a href="#stack" data-i18n="nav.stack">Stack</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button type="button" data-lang="en" class="active">EN</button>
+        <button type="button" data-lang="fr">FR</button>
+      </div>
+      <a class="contact-link" href="#contact" data-i18n="nav.cta">Start a conversation ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap" id="top">
+      <div class="kicker"><span class="dot"></span><span data-i18n="hero.kicker">CRM · Marketing Ops · Demand Gen · Paris</span></div>
+      <div class="hero-grid">
+        <h1 data-i18n-html="hero.h1">I build the path from <em>first click</em> to sales-ready pipeline.</h1>
+        <div class="hero-side">
+          <p data-i18n="hero.sub">Website, forms, CRM and automation designed as one system: from the WordPress page and the DNS record to the HubSpot workflow and the Sales alert.</p>
+          <div class="actions">
+            <a class="button primary" href="#router" data-i18n="hero.cta1">Run the lifecycle ↓</a>
+            <a class="button secondary" href="CV_TalihaCeren_EN.pdf" download data-i18n="hero.cta2">Download CV ↓</a>
+          </div>
+        </div>
+      </div>
+      <div class="metrics">
+        <div><strong>45K+</strong><span data-i18n="hero.m1">contacts cleaned</span></div>
+        <div><strong>5</strong><span data-i18n="hero.m2">brands run site to CRM</span></div>
+        <div><strong>+25%</strong><span data-i18n="hero.m3">MQL → SQL</span></div>
+      </div>
+    </section>
+
+    <section class="journey" aria-label="Lead lifecycle"><div class="wrap journey-track">
+      <div class="step"><span>01</span><b data-i18n="journey.1">Captured</b><i>→</i></div>
+      <div class="step"><span>02</span><b data-i18n="journey.2">Enriched</b><i>→</i></div>
+      <div class="step"><span>03</span><b data-i18n="journey.3">Scored</b><i>→</i></div>
+      <div class="step"><span>04</span><b data-i18n="journey.4">Nurtured</b><i>→</i></div>
+      <div class="step"><span>05</span><b data-i18n="journey.5">Sales-ready</b></div>
+    </div></section>
+
+    <section class="section wrap" id="services">
+      <div class="heading">
+        <div><span class="eyebrow" data-i18n="services.eyebrow">00 · What I build</span><h2 data-i18n-html="services.h2">Four capabilities.<br>One machine.</h2></div>
+        <p data-i18n="services.p">Every engagement starts with an audit of what exists, from the website and tracking to the CRM and the Sales handoff, then a system built to run itself.</p>
+      </div>
+      <div class="services">
+        <article class="service">
+          <span class="num">01</span>
+          <h3 data-i18n="services.s1.h">Demand Gen & Paid Social</h3>
+          <ul>
+            <li data-i18n="services.s1.l1">Multi-brand lead gen campaigns, B2B & B2C</li>
+            <li data-i18n="services.s1.l2">Meta & TikTok Ads, with search in support</li>
+            <li data-i18n="services.s1.l3">ABM & outbound sequences for target accounts</li>
+            <li data-i18n="services.s1.l4">Landing pages, lead magnets & UTM structure</li>
+          </ul>
+          <span class="tag" data-i18n="services.s1.tag">Brings in the right people</span>
+        </article>
+        <article class="service">
+          <span class="num">02</span>
+          <h3 data-i18n="services.s2.h">Web & Martech Ops</h3>
+          <ul>
+            <li data-i18n="services.s2.l1">WordPress / Elementor sites, HTML/CSS edits</li>
+            <li data-i18n="services.s2.l2">OVH hosting, DNS, subdomains & redirects</li>
+            <li data-i18n="services.s2.l3">White-label setups & secure forms (SSL, anti-spam, GDPR consent)</li>
+            <li data-i18n="services.s2.l4">GA4 / GTM tracking, built hand in hand with developers</li>
+          </ul>
+          <span class="tag" data-i18n="services.s2.tag">The website is part of the funnel</span>
+        </article>
+        <article class="service">
+          <span class="num">03</span>
+          <h3 data-i18n="services.s3.h">CRM Architecture</h3>
+          <ul>
+            <li data-i18n="services.s3.l1">CRM designed from scratch: objects, properties, pipelines</li>
+            <li data-i18n="services.s3.l2">HubSpot / Salesforce / Odoo / Brevo</li>
+            <li data-i18n="services.s3.l3">Lead scoring, lifecycle stages & MQL → SQL handoff</li>
+            <li data-i18n="services.s3.l4">Data cleaning, dedup & governance</li>
+          </ul>
+          <span class="tag" data-i18n="services.s3.tag">One source of truth</span>
+        </article>
+        <article class="service">
+          <span class="num">04</span>
+          <h3 data-i18n="services.s4.h">Automation & Reporting</h3>
+          <ul>
+            <li data-i18n="services.s4.l1">Nurture workflows, sequences & Sales alerts</li>
+            <li data-i18n="services.s4.l2">Make, Zapier, n8n integrations & API syncs</li>
+            <li data-i18n="services.s4.l3">Looker Studio / Power BI dashboards</li>
+            <li data-i18n="services.s4.l4">CPL, CAC, LTV & channel attribution</li>
+          </ul>
+          <span class="tag" data-i18n="services.s4.tag">Stops blind flying</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section wrap" id="router">
+      <div class="heading">
+        <div><span class="eyebrow" data-i18n="demo.eyebrow">01 · Interactive systems</span><h2 data-i18n="demo.h2">Try the machine.</h2></div>
+        <p data-i18n="demo.p">Three small models of what actually runs behind the scenes. Change the inputs, and the logic reacts the way a real system would.</p>
+      </div>
+
+      <div class="demo-tabs" role="tablist">
+        <button class="demo-tab active" data-tab="scoring" role="tab" aria-selected="true">
+          <span data-i18n="demo.tab1.eyebrow">Lead scoring</span>
+          <b data-i18n="demo.tab1.label">Route a lead →</b>
+        </button>
+        <button class="demo-tab" data-tab="attribution" role="tab" aria-selected="false">
+          <span data-i18n="demo.tab2.eyebrow">Attribution</span>
+          <b data-i18n="demo.tab2.label">Blind flight vs. tracked funnel →</b>
+        </button>
+        <button class="demo-tab" data-tab="segmentation" role="tab" aria-selected="false">
+          <span data-i18n="demo.tab3.eyebrow">Segmentation</span>
+          <b data-i18n="demo.tab3.label">Build a live segment →</b>
+        </button>
+      </div>
+
+      <!-- PANEL 1: Lead scoring router -->
+      <div class="demo-panel active" data-panel="scoring">
+        <div class="router">
+          <div class="inputs">
+            <fieldset class="group" data-group="source">
+              <legend data-i18n="demo.scoring.source">Acquisition source</legend>
+              <div class="choices">
+                <button class="choice" data-value="Paid" data-i18n="demo.scoring.paid">Paid</button>
+                <button class="choice" data-value="Organic" data-i18n="demo.scoring.organic">Organic</button>
+                <button class="choice active" data-value="Event" data-i18n="demo.scoring.event">Event</button>
+              </div>
+            </fieldset>
+            <fieldset class="group" data-group="engagement">
+              <legend data-i18n="demo.scoring.engagement">Engagement</legend>
+              <div class="choices">
+                <button class="choice" data-value="Low" data-i18n="demo.scoring.low">Low</button>
+                <button class="choice" data-value="Medium" data-i18n="demo.scoring.medium">Medium</button>
+                <button class="choice active" data-value="High" data-i18n="demo.scoring.high">High</button>
+              </div>
+            </fieldset>
+            <fieldset class="group" data-group="intent">
+              <legend data-i18n="demo.scoring.intent">Intent</legend>
+              <div class="choices">
+                <button class="choice" data-value="Researching" data-i18n="demo.scoring.researching">Researching</button>
+                <button class="choice active" data-value="Comparing" data-i18n="demo.scoring.comparing">Comparing</button>
+                <button class="choice" data-value="Ready" data-i18n="demo.scoring.ready">Ready to buy</button>
+              </div>
+            </fieldset>
+            <p class="model-note" data-i18n="demo.scoring.note">Illustrative scoring model. The logic stays visible on purpose: systems earn trust when a Sales rep can see exactly why a lead landed where it did.</p>
+          </div>
+          <div class="output" aria-live="polite">
+            <div class="score-head"><span data-i18n="demo.scoring.scorelabel">Lead score</span><strong><span id="score">76</span><small>/100</small></strong></div>
+            <div class="score-track"><span id="scoreBar"></span></div>
+            <dl>
+              <div><dt data-i18n="demo.scoring.stage">Stage</dt><dd id="stage">SQL</dd></div>
+              <div><dt data-i18n="demo.scoring.route">Route</dt><dd id="route">Priority sales route</dd></div>
+              <div><dt data-i18n="demo.scoring.action">Action</dt><dd class="highlight" id="action">Notify Sales now</dd></div>
+            </dl>
+            <div class="logic"><span>IF</span> <b id="logicSource">event</b> <span data-i18n="demo.scoring.plusa">source +</span> <b id="logicEngagement">high</b> <span data-i18n="demo.scoring.plusb">engagement +</span> <b id="logicIntent">comparing</b> <span data-i18n="demo.scoring.plusc">intent</span> <span>THEN</span> <b id="logicStage">sql</b></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PANEL 2: Attribution / blind flight -->
+      <div class="demo-panel" data-panel="attribution">
+        <div class="attrib">
+          <div class="attrib-grid">
+            <div class="attrib-col">
+              <h4 data-i18n="demo.attrib.blindh">Without tracked attribution</h4>
+              <p class="sub" data-i18n="demo.attrib.blindsub">What the creative team usually sees: campaigns went out, leads came in. Which channel actually converted stays a guess.</p>
+              <ul class="blind-list">
+                <li><span data-i18n="demo.attrib.paid">Paid</span><span>???</span></li>
+                <li><span data-i18n="demo.attrib.social">Social</span><span>???</span></li>
+                <li><span data-i18n="demo.attrib.organic2">Organic</span><span>???</span></li>
+                <li><span data-i18n="demo.attrib.event2">Event</span><span>???</span></li>
+              </ul>
+            </div>
+            <div class="attrib-col">
+              <h4 data-i18n="demo.attrib.trackedh">With a tracked funnel</h4>
+              <p class="sub" data-i18n="demo.attrib.trackedsub">UTMs, CRM source fields and GA4 tied to one lifecycle. Click a channel to isolate it and see where it actually lands.</p>
+              <div id="attribRows"></div>
+            </div>
+          </div>
+          <p class="attrib-note" data-i18n="demo.attrib.note">Illustrative distribution. In a live account this view is built from CRM source-of-lead fields, UTM parameters and GA4 channel grouping, reconciled into one report, so budget follows what converts, not what feels active.</p>
+        </div>
+      </div>
+
+      <!-- PANEL 3: Segmentation -->
+      <div class="demo-panel" data-panel="segmentation">
+        <div class="segdemo">
+          <div class="seg-controls" id="segControls">
+            <button class="seg-btn active" data-seg="all" data-i18n="demo.seg.all">All contacts</button>
+            <button class="seg-btn" data-seg="highintent" data-i18n="demo.seg.highintent">High intent</button>
+            <button class="seg-btn" data-seg="dormant" data-i18n="demo.seg.dormant">Dormant 60d+</button>
+            <button class="seg-btn" data-seg="education" data-i18n="demo.seg.education">B2C · Students</button>
+            <button class="seg-btn" data-seg="enterprise" data-i18n="demo.seg.enterprise">B2B · Named accounts</button>
+          </div>
+          <div class="seg-visual">
+            <div class="seg-ring">
+              <svg width="180" height="180" viewBox="0 0 180 180">
+                <circle cx="90" cy="90" r="78" fill="none" stroke="var(--line)" stroke-width="14"/>
+                <circle id="segRingFill" cx="90" cy="90" r="78" fill="none" stroke="var(--blush-deep)" stroke-width="14" stroke-linecap="round" stroke-dasharray="490" stroke-dashoffset="0"/>
+              </svg>
+              <div class="seg-ring-label"><strong id="segPct">100%</strong><span id="segCountLabel" data-i18n="demo.seg.ofbase">of base</span></div>
+            </div>
+            <div class="seg-desc">
+              <div class="who" id="segWho">Everyone in the CRM</div>
+              <div class="what" id="segWhat"></div>
+            </div>
+          </div>
+          <div class="seg-action" id="segAction"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cases-section" id="cases"><div class="wrap">
+      <div class="heading">
+        <div><span class="eyebrow" data-i18n="cases.eyebrow">02 · Selected systems</span><h2 data-i18n-html="cases.h2">Three interventions.<br>Measured movement.</h2></div>
+        <p data-i18n="cases.p">Each case walks through the same four steps: the situation coming in, the task at hand, what was actually built, and the measurable result.</p>
+      </div>
+      <div class="cases">
+        <article class="case">
+          <div class="case-top"><span>CASE 01</span><span>Digital Business School</span></div>
+          <h3 data-i18n="cases.c1.h">From website to pipeline, for five brands.</h3>
+          <div class="star-grid">
+            <div class="star-row">
+              <span class="star-label" data-i18n="cases.label.situation">Situation</span>
+              <p data-i18n="cases.c1.situation">Five school brands were generating leads through separate websites, forms and campaigns, but Sales didn't trust the handoff: MQLs weren't reliably ready to buy, and no one owned the full path from site to CRM.</p>
+            </div>
+            <div class="star-row">
+              <span class="star-label" data-i18n="cases.label.task">Task</span>
+              <p data-i18n="cases.c1.task">Own the full demand gen chain across all five brands, from the websites and forms to HubSpot and Odoo, so Sales could trust what landed in their queue.</p>
+            </div>
+            <div class="star-row">
+              <span class="star-label" data-i18n="cases.label.action">Action</span>
+              <div class="action-detail">
+                <p data-i18n-html="cases.c1.action"><b>Owned</b> the chain end to end: WordPress sites and OVH configuration, secured forms, a CRM architecture designed from the ground up, 45K+ contacts cleaned, a B2B/B2C scoring model, 8 nurture workflows, automated Sales alerts and Looker reporting on the whole pipeline.</p>
+                <p class="action-example" data-i18n="cases.c1.examplelabel">Example: the "back to school" enrollment campaign</p>
+                <ul class="action-list">
+                  <li data-i18n="cases.c1.step1">Built and maintained the landing pages and program sites for each brand in WordPress and Elementor, with hand-coded HTML/CSS where templates fell short.</li>
+                  <li data-i18n="cases.c1.step2">Handled the OVH side directly: domains, DNS records, subdomains and 301 redirects, so every campaign URL resolved cleanly and old pages kept their traffic.</li>
+                  <li data-i18n="cases.c1.step3">Set up lead forms with security in mind (SSL, anti-spam, GDPR consent fields), mapped every field into HubSpot, and briefed developers whenever a deeper integration or API sync was needed.</li>
+                  <li data-i18n="cases.c1.step4">Contributed to the paid side of the enrollment push on Meta and TikTok, with Google Ads in support, and a UTM structure feeding source data straight into the CRM.</li>
+                  <li data-i18n="cases.c1.step5">Applied the B2B/B2C scoring model in real time as forms came in, and routed every hand-raiser to Sales the moment they crossed the SQL threshold, cutting response lag from days to minutes.</li>
+                  <li data-i18n="cases.c1.step6">Built an email nurture sequence for undecided prospects, running in parallel with an SMS reminder track for open house dates and application deadlines.</li>
+                  <li data-i18n="cases.c1.step7">Managed a work-study marketer on communication, social content, Meta and TikTok Ads, and designed small logos and visual refreshes when a program needed its own identity.</li>
+                  <li data-i18n="cases.c1.step8">Reported weekly on cost per lead and MQL to SQL conversion by channel and by brand, so spend shifted mid-campaign toward what was actually converting.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="star-row star-row-result">
+              <span class="star-label" data-i18n="cases.label.result">Result</span>
+              <p data-i18n="cases.c1.result">Sales started acting on MQLs instead of second-guessing them.</p>
+            </div>
+          </div>
+          <div class="case-metric"><strong>+25%</strong><span data-i18n="cases.c1.metric">MQL → SQL conversion</span></div>
+        </article>
+
+        <article class="case">
+          <div class="case-top"><span>CASE 02</span><span>Fondation Horizon &amp; Beyond</span></div>
+          <h3 data-i18n="cases.c2.h">Launching a white-label offer to named accounts.</h3>
+          <div class="star-grid">
+            <div class="star-row">
+              <span class="star-label" data-i18n="cases.label.situation">Situation</span>
+              <p data-i18n="cases.c2.situation">A white-label MOOC needed to reach specific institutions, banks and financial bodies, where generic outreach would have reached the wrong audience entirely.</p>
+            </div>
+            <div class="star-row">
+              <span class="star-label" data-i18n="cases.label.task">Task</span>
+              <p data-i18n="cases.c2.task">Set up the white-label offer and a focused B2B prospection strategy around it, built on account-level targeting instead of broad campaign reach.</p>
+            </div>
+            <div class="star-row">
+              <span class="star-label" data-i18n="cases.label.action">Action</span>
+              <div class="action-detail">
+                <p data-i18n-html="cases.c2.action"><b>Built</b> the CRM for the offer from scratch in HubSpot, configured the white-label setup, ran ABM targeting and B2B sequences for named institutional prospects, and kept account-level activity visible from first contact to conversion.</p>
+                <p class="action-example" data-i18n="cases.c2.examplelabel">Example: from event floor to named-account sequence</p>
+                <ul class="action-list">
+                  <li data-i18n="cases.c2.step1">Designed the logo and visual identity of the MOOC de la finance durable, then configured the white-label environment: partner-branded instance, custom subdomain and DNS on OVH.</li>
+                  <li data-i18n="cases.c2.step2">Designed the HubSpot structure from scratch (properties, account tiers, deal pipeline), then built the named-account list of target institutions (banks and financial bodies) before any outreach started.</li>
+                  <li data-i18n="cases.c2.step3">Collected contacts directly at finance and banking sector events, tagging each one at capture with their institution and role instead of dumping them into a generic list.</li>
+                  <li data-i18n="cases.c2.step4">Enrolled each contact into an account-level sequence, not an individual one, so messaging stayed consistent across everyone from the same institution.</li>
+                  <li data-i18n="cases.c2.step5">Triggered follow-up content based on engagement signals: a content download moved a contact forward, silence moved them into a lighter re-engagement track.</li>
+                  <li data-i18n="cases.c2.step6">Rolled account-level engagement up into a single CRM view, so it was always clear which institutions were warming up and which had gone quiet.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="star-row star-row-result">
+              <span class="star-label" data-i18n="cases.label.result">Result</span>
+              <p data-i18n="cases.c2.result">12 target accounts activated in six months, with engagement well above typical B2B benchmarks.</p>
+            </div>
+          </div>
+          <div class="case-metric"><strong>12</strong><span data-i18n="cases.c2.metric">accounts activated</span></div>
+          <div class="micro"><span>32% <span data-i18n="cases.openrate">open rate</span></span><span>8.5% CTR</span></div>
+        </article>
+
+        <article class="case">
+          <div class="case-top"><span>CASE 03</span><span>Scorp INC</span></div>
+          <h3 data-i18n="cases.c3.h">Getting three apps noticed.</h3>
+          <div class="star-grid">
+            <div class="star-row">
+              <span class="star-label" data-i18n="cases.label.situation">Situation</span>
+              <p data-i18n="cases.c3.situation">Three B2B mobile apps were entering their market with little brand awareness and no structured way to turn interest into leads.</p>
+            </div>
+            <div class="star-row">
+              <span class="star-label" data-i18n="cases.label.task">Task</span>
+              <p data-i18n="cases.c3.task">Build awareness and a steady lead flow for the three apps, and put the first CRM basics in place to follow up on them.</p>
+            </div>
+            <div class="star-row">
+              <span class="star-label" data-i18n="cases.label.action">Action</span>
+              <div class="action-detail">
+                <p data-i18n-html="cases.c3.action"><b>Ran</b> brand awareness and demand gen for the three apps: positioning, content, social media and launch campaigns, paid social lead gen with dedicated landing pages, a visual rebranding, and my first CRM setup in Brevo and Salesforce.</p>
+                <p class="action-example" data-i18n="cases.c3.examplelabel">Example: from launch post to qualified lead</p>
+                <ul class="action-list">
+                  <li data-i18n="cases.c3.step1">Defined the positioning and a content calendar for each app: LinkedIn, Instagram, newsletters and product launch posts.</li>
+                  <li data-i18n="cases.c3.step2">Ran lead gen campaigns on paid social and LinkedIn, each pointing to a dedicated landing page and lead form.</li>
+                  <li data-i18n="cases.c3.step3">Supported the visual rebranding of the three apps (logo refinements, store visuals, email templates) so the brand looked the same everywhere.</li>
+                  <li data-i18n="cases.c3.step4">Worked with the developers on app store pages and basic event tracking, to see which channels actually brought active users.</li>
+                  <li data-i18n="cases.c3.step5">Set up my first CRM workflows: Brevo onboarding and reactivation emails, and a simple Salesforce lead pipeline so Sales could follow up on every inbound lead.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="star-row star-row-result">
+              <span class="star-label" data-i18n="cases.label.result">Result</span>
+              <p data-i18n="cases.c3.result">The apps gained visibility in their market, and Sales received a regular flow of inbound leads instead of ad-hoc contacts.</p>
+            </div>
+          </div>
+          <div class="case-metric"><strong>3</strong><span data-i18n="cases.c3.metric">B2B apps brought to market</span></div>
+          <div class="micro"><span data-i18n="cases.c3.micro1">Paid social · LinkedIn</span><span data-i18n="cases.c3.micro2">Rebranding</span></div>
+        </article>
+      </div>
+    </div></section>
+
+
+    <section class="section wrap" id="work">
+      <div class="heading">
+        <div><span class="eyebrow" data-i18n="work.eyebrow">03 · Live work</span><h2 data-i18n-html="work.h2">Shipped and live.<br>Click through.</h2></div>
+        <p data-i18n="work.p">Sites and brands I've built, tagged and designed. Every card opens the live site; open the panel to see exactly what I implemented.</p>
+      </div>
+      <div class="work-filters" role="group" aria-label="Filter">
+        <button type="button" class="work-filter active" data-filter="all" data-i18n="work.f.all">All</button>
+        <button type="button" class="work-filter" data-filter="tracking" data-i18n="work.f.tracking">Tracking (GTM)</button>
+        <button type="button" class="work-filter" data-filter="forms" data-i18n="work.f.forms">Forms & UX</button>
+        <button type="button" class="work-filter" data-filter="brand" data-i18n="work.f.brand">Logo & branding</button>
+      </div>
+      <div class="work-grid">
+        <article class="work-card" data-tags="brand tracking forms">
+          <div class="work-visual logo-bg"><img src="https://unicours.fr/unicours.png" alt="Unicours" loading="lazy" onerror="workFallback(this)"><a class="cover" href="https://unicours.fr/" target="_blank" rel="noreferrer" aria-label="unicours"></a></div>
+          <div class="work-body">
+            <span class="work-sub" data-i18n="work.unicours.sub">Tutoring & academic support</span>
+            <h3><a href="https://unicours.fr/" target="_blank" rel="noreferrer" data-i18n="work.unicours.name">Unicours</a></h3>
+            <p class="work-desc" data-i18n="work.unicours.desc">Designed the logo and brand identity, then built the UX of the quote, contact and brochure-request journeys, with GTM tracking on every conversion.</p>
+            <div class="work-chips"><span data-i18n="work.chip.brand">Logo & branding</span><span data-i18n="work.chip.gtm">GTM</span><span data-i18n="work.chip.forms">Forms</span><span data-i18n="work.chip.ux">UX</span></div>
+            <ul class="work-panel"><li data-i18n="work.unicours.i1">Logo and visual identity, designed from scratch</li><li data-i18n="work.unicours.i2">Quote and contact forms, segmented by school level</li><li data-i18n="work.unicours.i3">GTM: form submits, brochure downloads, click-to-call</li><li data-i18n="work.unicours.i4">Mobile-first UX for parents, built around one clear call to action</li></ul>
+            <div class="work-actions">
+              <button type="button" class="work-toggle" data-i18n="work.more" aria-expanded="false">What I implemented +</button>
+              <a class="work-open" href="https://unicours.fr/" target="_blank" rel="noreferrer" data-i18n="work.open">Open live site ↗</a>
+            </div>
+          </div>
+        </article>
+        <article class="work-card" data-tags="tracking forms">
+          <div class="work-visual logo-bg"><img src="https://www.pnbs.fr/wp-content/uploads/2019/07/Logo.png" alt="PNBS" loading="lazy" onerror="workFallback(this)"><a class="cover" href="https://www.pnbs.fr/" target="_blank" rel="noreferrer" aria-label="pnbs"></a></div>
+          <div class="work-body">
+            <span class="work-sub" data-i18n="work.pnbs.sub">Work-study business school · 12 campuses</span>
+            <h3><a href="https://www.pnbs.fr/" target="_blank" rel="noreferrer" data-i18n="work.pnbs.name">PNBS · Paris Nord Business School</a></h3>
+            <p class="work-desc" data-i18n="work.pnbs.desc">Implemented GTM across the site, built the brochure, application and employer forms, and reworked the UX of program and candidature pages.</p>
+            <div class="work-chips"><span data-i18n="work.chip.gtm">GTM</span><span data-i18n="work.chip.forms">Forms</span><span data-i18n="work.chip.ux">UX</span></div>
+            <ul class="work-panel"><li data-i18n="work.pnbs.i1">GTM container: page views, form submits, brochure downloads</li><li data-i18n="work.pnbs.i2">Brochure, application and employer inquiry forms</li><li data-i18n="work.pnbs.i3">Form data mapped into the CRM for scoring and routing</li><li data-i18n="work.pnbs.i4">UX of program pages and the candidature path</li></ul>
+            <div class="work-actions">
+              <button type="button" class="work-toggle" data-i18n="work.more" aria-expanded="false">What I implemented +</button>
+              <a class="work-open" href="https://www.pnbs.fr/" target="_blank" rel="noreferrer" data-i18n="work.open">Open live site ↗</a>
+            </div>
+          </div>
+        </article>
+        <article class="work-card" data-tags="tracking forms">
+          <div class="work-visual logo-bg"><img src="https://pnff.fr/wp-content/uploads/2024/09/LOGO_PN_FOOD_FORMATION__1_-removebg-preview-1.png" alt="PNFF" loading="lazy" onerror="workFallback(this)"><a class="cover" href="https://pnff.fr/" target="_blank" rel="noreferrer" aria-label="pnff"></a></div>
+          <div class="work-body">
+            <span class="work-sub" data-i18n="work.pnff.sub">Restaurant & food-service apprenticeships</span>
+            <h3><a href="https://pnff.fr/" target="_blank" rel="noreferrer" data-i18n="work.pnff.name">PNFF · Paris Nord Food Formation</a></h3>
+            <p class="work-desc" data-i18n="work.pnff.desc">Implemented GTM, built the candidate and employer ("Je recrute") forms, and shaped the UX from program pages to the application.</p>
+            <div class="work-chips"><span data-i18n="work.chip.gtm">GTM</span><span data-i18n="work.chip.forms">Forms</span><span data-i18n="work.chip.ux">UX</span></div>
+            <ul class="work-panel"><li data-i18n="work.pnff.i1">GTM tracking on applications and employer requests</li><li data-i18n="work.pnff.i2">Candidate application form</li><li data-i18n="work.pnff.i3">Employer "Je recrute" form feeding the CRM</li><li data-i18n="work.pnff.i4">UX of programs, job datings and candidature pages</li></ul>
+            <div class="work-actions">
+              <button type="button" class="work-toggle" data-i18n="work.more" aria-expanded="false">What I implemented +</button>
+              <a class="work-open" href="https://pnff.fr/" target="_blank" rel="noreferrer" data-i18n="work.open">Open live site ↗</a>
+            </div>
+          </div>
+        </article>
+        <article class="work-card" data-tags="brand">
+          <div class="work-visual banner-bg"><img src="https://mooc.institutlouisbachelier.org/wp-content/uploads/2024/10/image-mooc-site-fr-1.png" alt="MOOC de la finance durable" loading="lazy" onerror="workFallback(this)"><a class="cover" href="https://mooc.institutlouisbachelier.org/mooc/mooc-finance-durable/?tab=tab-overview" target="_blank" rel="noreferrer" aria-label="mooc"></a></div>
+          <div class="work-body">
+            <span class="work-sub" data-i18n="work.mooc.sub">Horizon & Beyond · with ILB and IFD · launched Nov 2024</span>
+            <h3><a href="https://mooc.institutlouisbachelier.org/mooc/mooc-finance-durable/?tab=tab-overview" target="_blank" rel="noreferrer" data-i18n="work.mooc.name">MOOC de la finance durable</a></h3>
+            <p class="work-desc" data-i18n="work.mooc.desc">Owned the logo and branding of this free, bilingual sustainable-finance MOOC, used across the course, its launch and the B2B prospection behind it.</p>
+            <div class="work-chips"><span data-i18n="work.chip.brand">Logo & branding</span><span data-i18n="work.chip.launch">Launch</span></div>
+            <ul class="work-panel"><li data-i18n="work.mooc.i1">Logo and visual identity</li><li data-i18n="work.mooc.i2">Brand assets for the course pages and the launch</li><li data-i18n="work.mooc.i3">Co-branded materials for institutional prospects</li></ul>
+            <div class="work-actions">
+              <button type="button" class="work-toggle" data-i18n="work.more" aria-expanded="false">What I implemented +</button>
+              <a class="work-open" href="https://mooc.institutlouisbachelier.org/mooc/mooc-finance-durable/?tab=tab-overview" target="_blank" rel="noreferrer" data-i18n="work.open">Open live site ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <p class="work-note" data-i18n="work.note">Logos and visuals are loaded from the live sites. Brand marks belong to their respective organisations.</p>
+    </section>
+
+    <section class="section wrap" id="stack">
+      <div class="heading">
+        <div><span class="eyebrow" data-i18n="stack.eyebrow">04 · System architecture</span><h2 data-i18n="stack.h2">Stack I use.</h2></div>
+        <p data-i18n="stack.p">Tools are organised by the role they play in the lifecycle, not displayed as a logo cemetery.</p>
+      </div>
+      <div class="stack">
+        <article><span>01</span><h3 data-i18n="stack.s1">Web & capture</h3><p data-i18n="stack.s1t">WordPress · Elementor · HTML/CSS · OVH · Forms · GA4 · GTM</p></article>
+        <article><span>02</span><h3 data-i18n="stack.s2">CRM</h3><p>HubSpot · Salesforce · Odoo</p></article>
+        <article><span>03</span><h3 data-i18n="stack.s3">Automation</h3><p>Make · Zapier · n8n</p></article>
+        <article><span>04</span><h3 data-i18n="stack.s4">Activation</h3><p data-i18n="stack.s4t">Brevo · Sequences · Meta & TikTok Ads</p></article>
+        <article><span>05</span><h3 data-i18n="stack.s5">Reporting</h3><p>SQL · Looker · Power BI</p></article>
+      </div>
+    </section>
+
+    <section class="principles wrap">
+      <p class="eyebrow" data-i18n="principles.eyebrow">Operating principles</p>
+      <div class="principle-grid">
+        <p data-i18n="principles.p1">Define the lifecycle before automating it.</p>
+        <p data-i18n="principles.p2">Treat data quality as conversion infrastructure.</p>
+        <p data-i18n="principles.p3">Make Marketing–Sales handoffs observable.</p>
+        <p data-i18n="principles.p4">Automate repetition, not accountability.</p>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact"><div class="wrap contact-grid">
+      <div class="contact-copy">
+        <span class="eyebrow" data-i18n="contact.eyebrow">05 · Start a conversation</span>
+        <h2 style="margin:14px 0 0;font:400 clamp(38px,4.6vw,58px)/1 var(--serif);letter-spacing:-.02em" data-i18n="contact.h2">Tell me where your funnel breaks: site, CRM or handoff.</h2>
+        <p data-i18n="contact.p">A CRM that exists isn't the same as a funnel that works. Send a few details and I'll come back with what I'd audit first, no generic pitch.</p>
+        <div class="direct">
+          <a href="mailto:taliacerens@gmail.com">taliacerens@gmail.com <span>↗</span></a>
+          <a href="https://fr.linkedin.com/in/taliha-ceren-sahin-491b74271" target="_blank" rel="noreferrer"><span data-i18n="contact.linkedin">LinkedIn</span> <span>↗</span></a>
+          <a href="https://github.com/taliacerens" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+        </div>
+      </div>
+      <form class="leadform" id="leadForm" action="https://api.web3forms.com/submit" method="POST">
+        <!-- Web3Forms: paste your access key below (get it free at web3forms.com) -->
+        <input type="hidden" name="access_key" value="56de7fea-0781-4280-8fe4-addde1ae32d0">
+        <input type="hidden" name="subject" value="New message from your portfolio">
+        <input type="hidden" name="from_name" value="Portfolio contact form">
+        <input type="checkbox" name="botcheck" class="hp-field" style="display:none" tabindex="-1" autocomplete="off">
+        <div class="form-row">
+          <div class="field">
+            <label for="fname" data-i18n="contact.name">Full name</label>
+            <input type="text" id="fname" name="name" required>
+          </div>
+          <div class="field">
+            <label for="femail" data-i18n="contact.email">Email</label>
+            <input type="email" id="femail" name="email" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="fcompany" data-i18n="contact.company">Company</label>
+          <input type="text" id="fcompany" name="company">
+        </div>
+        <div class="field">
+          <label for="fneed" data-i18n="contact.need">What do you need?</label>
+          <select id="fneed" name="need">
+            <option data-i18n="contact.opt1">CRM audit or CRM from scratch</option>
+            <option data-i18n="contact.opt2">Lead scoring & segmentation</option>
+            <option data-i18n="contact.opt3">Marketing automation setup</option>
+            <option data-i18n="contact.opt4">Website, forms & tracking setup</option>
+            <option data-i18n="contact.opt5">Something else</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="fmessage" data-i18n="contact.message">Message</label>
+          <textarea id="fmessage" name="message" placeholder=""></textarea>
+        </div>
+        <button type="submit" class="submit-btn" id="submitBtn" data-i18n="contact.submit">Send</button>
+        <p class="form-note" data-i18n="contact.note">Sent directly and privately. It only goes to Taliha, nowhere else.</p>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div></section>
+  </main>
+
+  <footer><div class="wrap footer-grid">
+    <div><span class="eyebrow" data-i18n="footer.eyebrow">Available for CRM, Marketing Ops & Demand Gen roles · Paris</span><h2 data-i18n-html="footer.h2">Let's build the system that turns your leads into a <em>predictable pipeline</em>.</h2></div>
+    <div class="footer-links">
+      <a href="CV_TalihaCeren_EN.pdf" download><span data-i18n="footer.cven">Download CV: English</span> <span>↓</span></a>
+      <a href="CV_TalihaCeren_FR.pdf" download><span data-i18n="footer.cvfr">Download CV: Français</span> <span>↓</span></a>
+      <a href="https://fr.linkedin.com/in/taliha-ceren-sahin-491b74271" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+      <a href="https://github.com/taliacerens" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+      <a href="mailto:taliacerens@gmail.com" data-i18n="footer.email">Email ↗</a>
+    </div>
+  </div>
+  <div class="wrap copyright"><span>© 2026 Taliha Ceren Sahin</span><span data-i18n="footer.tag">Web · CRM · Automation · Demand Gen</span></div></footer>
+
+  <script>
+// ================= i18n =================
+const I18N = {
+  en: {
+    "nav.tag":"Website → CRM → Pipeline","nav.services":"Services","nav.demos":"Demos","nav.cases":"Cases","nav.stack":"Stack","nav.contact":"Contact","nav.cta":"Start a conversation ↗",
+    "hero.kicker":"CRM · Marketing Ops · Demand Gen · Paris",
+    "hero.h1":"I build the path from <em>first click</em> to sales-ready pipeline.",
+    "hero.sub":"Website, forms, CRM and automation designed as one system: from the WordPress page and the DNS record to the HubSpot workflow and the Sales alert.",
+    "hero.cta1":"Run the lifecycle ↓","hero.cta2":"Download CV ↓",
+    "hero.m1":"contacts cleaned","hero.m2":"brands run site to CRM","hero.m3":"MQL → SQL",
+    "journey.1":"Captured","journey.2":"Enriched","journey.3":"Scored","journey.4":"Nurtured","journey.5":"Sales-ready",
+    "services.eyebrow":"00 · What I build","services.h2":"Four capabilities.<br>One machine.",
+    "services.p":"Every engagement starts with an audit of what exists, from the website and tracking to the CRM and the Sales handoff, then a system built to run itself.",
+    "services.s1.h":"Demand Gen & Paid Social",
+    "services.s1.l1":"Multi-brand lead gen campaigns, B2B & B2C","services.s1.l2":"Meta & TikTok Ads, with search in support","services.s1.l3":"ABM & outbound sequences for target accounts","services.s1.l4":"Landing pages, lead magnets & UTM structure","services.s1.tag":"Brings in the right people",
+    "services.s2.h":"Web & Martech Ops",
+    "services.s2.l1":"WordPress / Elementor sites, HTML/CSS edits","services.s2.l2":"OVH hosting, DNS, subdomains & redirects","services.s2.l3":"White-label setups & secure forms (SSL, anti-spam, GDPR consent)","services.s2.l4":"GA4 / GTM tracking, built hand in hand with developers","services.s2.tag":"The website is part of the funnel",
+    "services.s3.h":"CRM Architecture",
+    "services.s3.l1":"CRM designed from scratch: objects, properties, pipelines","services.s3.l2":"HubSpot / Salesforce / Odoo / Brevo","services.s3.l3":"Lead scoring, lifecycle stages & MQL → SQL handoff","services.s3.l4":"Data cleaning, dedup & governance","services.s3.tag":"One source of truth",
+    "services.s4.h":"Automation & Reporting",
+    "services.s4.l1":"Nurture workflows, sequences & Sales alerts","services.s4.l2":"Make, Zapier, n8n integrations & API syncs","services.s4.l3":"Looker Studio / Power BI dashboards","services.s4.l4":"CPL, CAC, LTV & channel attribution","services.s4.tag":"Stops blind flying",
+    "demo.eyebrow":"01 · Interactive systems","demo.h2":"Try the machine.",
+    "demo.p":"Three small models of what actually runs behind the scenes. Change the inputs, and the logic reacts the way a real system would.",
+    "demo.tab1.eyebrow":"Lead scoring","demo.tab1.label":"Route a lead →",
+    "demo.tab2.eyebrow":"Attribution","demo.tab2.label":"Blind flight vs. tracked funnel →",
+    "demo.tab3.eyebrow":"Segmentation","demo.tab3.label":"Build a live segment →",
+    "demo.scoring.source":"Acquisition source","demo.scoring.paid":"Paid","demo.scoring.organic":"Organic","demo.scoring.event":"Event",
+    "demo.scoring.engagement":"Engagement","demo.scoring.low":"Low","demo.scoring.medium":"Medium","demo.scoring.high":"High",
+    "demo.scoring.intent":"Intent","demo.scoring.researching":"Researching","demo.scoring.comparing":"Comparing","demo.scoring.ready":"Ready to buy",
+    "demo.scoring.note":"Illustrative scoring model. The logic stays visible on purpose: systems earn trust when a Sales rep can see exactly why a lead landed where it did.",
+    "demo.scoring.scorelabel":"Lead score","demo.scoring.stage":"Stage","demo.scoring.route":"Route","demo.scoring.action":"Action",
+    "demo.scoring.plusa":"source +","demo.scoring.plusb":"engagement +","demo.scoring.plusc":"intent",
+    "demo.attrib.blindh":"Without tracked attribution","demo.attrib.blindsub":"What the creative team usually sees: campaigns went out, leads came in. Which channel actually converted stays a guess.",
+    "demo.attrib.paid":"Paid","demo.attrib.social":"Social","demo.attrib.organic2":"Organic","demo.attrib.event2":"Event",
+    "demo.attrib.trackedh":"With a tracked funnel","demo.attrib.trackedsub":"UTMs, CRM source fields and GA4 tied to one lifecycle. Click a channel to isolate it and see where it actually lands.",
+    "demo.attrib.note":"Illustrative distribution. In a live account this view is built from CRM source-of-lead fields, UTM parameters and GA4 channel grouping, reconciled into one report, so budget follows what converts, not what feels active.",
+    "demo.seg.all":"All contacts","demo.seg.highintent":"High intent","demo.seg.dormant":"Dormant 60d+","demo.seg.education":"B2C · Students","demo.seg.enterprise":"B2B · Named accounts",
+    "demo.seg.matching":"contacts matching","demo.seg.ofbase":"of base",
+    "cases.eyebrow":"02 · Selected systems","cases.h2":"Three interventions.<br>Measured movement.","cases.p":"Each case walks through the same four steps: the situation coming in, the task at hand, what was actually built, and the measurable result.",
+    "cases.label.situation":"Situation","cases.label.task":"Task","cases.label.action":"Action","cases.label.result":"Result",
+    "cases.c1.h":"From website to pipeline, for five brands.",
+    "cases.c1.situation":"Five school brands were generating leads through separate websites, forms and campaigns, but Sales didn't trust the handoff: MQLs weren't reliably ready to buy, and no one owned the full path from site to CRM.",
+    "cases.c1.task":"Own the full demand gen chain across all five brands, from the websites and forms to HubSpot and Odoo, so Sales could trust what landed in their queue.",
+    "cases.c1.action":"<b>Owned</b> the chain end to end: WordPress sites and OVH configuration, secured forms, a CRM architecture designed from the ground up, 45K+ contacts cleaned, a B2B/B2C scoring model, 8 nurture workflows, automated Sales alerts and Looker reporting on the whole pipeline.",
+    "cases.c1.result":"Sales started acting on MQLs instead of second-guessing them.","cases.c1.metric":"MQL → SQL conversion",
+    "cases.c1.examplelabel":"Example: the \"back to school\" enrollment campaign",
+    "cases.c1.step1":"Built and maintained the landing pages and program sites for each brand in WordPress and Elementor, with hand-coded HTML/CSS where templates fell short.",
+    "cases.c1.step2":"Handled the OVH side directly: domains, DNS records, subdomains and 301 redirects, so every campaign URL resolved cleanly and old pages kept their traffic.",
+    "cases.c1.step3":"Set up lead forms with security in mind (SSL, anti-spam, GDPR consent fields), mapped every field into HubSpot, and briefed developers whenever a deeper integration or API sync was needed.",
+    "cases.c1.step4":"Contributed to the paid side of the enrollment push on Meta and TikTok, with Google Ads in support, and a UTM structure feeding source data straight into the CRM.",
+    "cases.c1.step5":"Applied the B2B/B2C scoring model in real time as forms came in, and routed every hand-raiser to Sales the moment they crossed the SQL threshold, cutting response lag from days to minutes.",
+    "cases.c1.step6":"Built an email nurture sequence for undecided prospects, running in parallel with an SMS reminder track for open house dates and application deadlines.",
+    "cases.c1.step7":"Managed a work-study marketer on communication, social content, Meta and TikTok Ads, and designed small logos and visual refreshes when a program needed its own identity.",
+    "cases.c1.step8":"Reported weekly on cost per lead and MQL to SQL conversion by channel and by brand, so spend shifted mid-campaign toward what was actually converting.",
+    "cases.c2.h":"Launching a white-label offer to named accounts.",
+    "cases.c2.situation":"A white-label MOOC needed to reach specific institutions, banks and financial bodies, where generic outreach would have reached the wrong audience entirely.",
+    "cases.c2.task":"Set up the white-label offer and a focused B2B prospection strategy around it, built on account-level targeting instead of broad campaign reach.",
+    "cases.c2.action":"<b>Built</b> the CRM for the offer from scratch in HubSpot, configured the white-label setup, ran ABM targeting and B2B sequences for named institutional prospects, and kept account-level activity visible from first contact to conversion.",
+    "cases.c2.result":"12 target accounts activated in six months, with engagement well above typical B2B benchmarks.","cases.c2.metric":"accounts activated",
+    "cases.c2.examplelabel":"Example: from event floor to named-account sequence",
+    "cases.c2.step1":"Designed the logo and visual identity of the MOOC de la finance durable, then configured the white-label environment: partner-branded instance, custom subdomain and DNS on OVH.",
+    "cases.c2.step2":"Designed the HubSpot structure from scratch (properties, account tiers, deal pipeline), then built the named-account list of target institutions (banks and financial bodies) before any outreach started.",
+    "cases.c2.step3":"Collected contacts directly at finance and banking sector events, tagging each one at capture with their institution and role instead of dumping them into a generic list.",
+    "cases.c2.step4":"Enrolled each contact into an account-level sequence, not an individual one, so messaging stayed consistent across everyone from the same institution.",
+    "cases.c2.step5":"Triggered follow-up content based on engagement signals: a content download moved a contact forward, silence moved them into a lighter re-engagement track.",
+    "cases.c2.step6":"Rolled account-level engagement up into a single CRM view, so it was always clear which institutions were warming up and which had gone quiet.",
+    "cases.c3.h":"Getting three apps noticed.",
+    "cases.c3.situation":"Three B2B mobile apps were entering their market with little brand awareness and no structured way to turn interest into leads.",
+    "cases.c3.task":"Build awareness and a steady lead flow for the three apps, and put the first CRM basics in place to follow up on them.",
+    "cases.c3.action":"<b>Ran</b> brand awareness and demand gen for the three apps: positioning, content, social media and launch campaigns, paid social lead gen with dedicated landing pages, a visual rebranding, and my first CRM setup in Brevo and Salesforce.",
+    "cases.c3.result":"The apps gained visibility in their market, and Sales received a regular flow of inbound leads instead of ad-hoc contacts.","cases.c3.metric":"B2B apps brought to market",
+    "cases.c3.examplelabel":"Example: from launch post to qualified lead",
+    "cases.c3.step1":"Defined the positioning and a content calendar for each app: LinkedIn, Instagram, newsletters and product launch posts.",
+    "cases.c3.step2":"Ran lead gen campaigns on paid social and LinkedIn, each pointing to a dedicated landing page and lead form.",
+    "cases.c3.step3":"Supported the visual rebranding of the three apps (logo refinements, store visuals, email templates) so the brand looked the same everywhere.",
+    "cases.c3.step4":"Worked with the developers on app store pages and basic event tracking, to see which channels actually brought active users.",
+    "cases.c3.step5":"Set up my first CRM workflows: Brevo onboarding and reactivation emails, and a simple Salesforce lead pipeline so Sales could follow up on every inbound lead.",
+    "cases.c3.micro1":"Paid social · LinkedIn",
+    "cases.c3.micro2":"Rebranding",
+    "cases.openrate":"open rate","cases.churn":"churn","cases.automations":"automations","cases.cta":"Full case study deck ↓",
+    "nav.work":"Work",
+    "work.eyebrow":"03 · Live work",
+    "work.h2":"Shipped and live.<br>Click through.",
+    "work.p":"Sites and brands I've built, tagged and designed. Every card opens the live site; open the panel to see exactly what I implemented.",
+    "work.f.all":"All",
+    "work.f.tracking":"Tracking (GTM)",
+    "work.f.forms":"Forms & UX",
+    "work.f.brand":"Logo & branding",
+    "work.chip.brand":"Logo & branding",
+    "work.chip.gtm":"GTM",
+    "work.chip.forms":"Forms",
+    "work.chip.ux":"UX",
+    "work.chip.launch":"Launch",
+    "work.open":"Open live site ↗",
+    "work.more":"What I implemented +",
+    "work.less":"Close −",
+    "work.note":"Logos and visuals are loaded from the live sites. Brand marks belong to their respective organisations.",
+    "work.unicours.name":"Unicours",
+    "work.unicours.sub":"Tutoring & academic support",
+    "work.unicours.desc":"Designed the logo and brand identity, then built the UX of the quote, contact and brochure-request journeys, with GTM tracking on every conversion.",
+    "work.unicours.i1":"Logo and visual identity, designed from scratch",
+    "work.unicours.i2":"Quote and contact forms, segmented by school level",
+    "work.unicours.i3":"GTM: form submits, brochure downloads, click-to-call",
+    "work.unicours.i4":"Mobile-first UX for parents, built around one clear call to action",
+    "work.pnbs.name":"PNBS · Paris Nord Business School",
+    "work.pnbs.sub":"Work-study business school · 12 campuses",
+    "work.pnbs.desc":"Implemented GTM across the site, built the brochure, application and employer forms, and reworked the UX of program and candidature pages.",
+    "work.pnbs.i1":"GTM container: page views, form submits, brochure downloads",
+    "work.pnbs.i2":"Brochure, application and employer inquiry forms",
+    "work.pnbs.i3":"Form data mapped into the CRM for scoring and routing",
+    "work.pnbs.i4":"UX of program pages and the candidature path",
+    "work.pnff.name":"PNFF · Paris Nord Food Formation",
+    "work.pnff.sub":"Restaurant & food-service apprenticeships",
+    "work.pnff.desc":"Implemented GTM, built the candidate and employer (\"Je recrute\") forms, and shaped the UX from program pages to the application.",
+    "work.pnff.i1":"GTM tracking on applications and employer requests",
+    "work.pnff.i2":"Candidate application form",
+    "work.pnff.i3":"Employer \"Je recrute\" form feeding the CRM",
+    "work.pnff.i4":"UX of programs, job datings and candidature pages",
+    "work.mooc.name":"MOOC de la finance durable",
+    "work.mooc.sub":"Horizon & Beyond · with ILB and IFD · launched Nov 2024",
+    "work.mooc.desc":"Owned the logo and branding of this free, bilingual sustainable-finance MOOC, used across the course, its launch and the B2B prospection behind it.",
+    "work.mooc.i1":"Logo and visual identity",
+    "work.mooc.i2":"Brand assets for the course pages and the launch",
+    "work.mooc.i3":"Co-branded materials for institutional prospects",
+    "stack.eyebrow":"04 · System architecture","stack.h2":"Stack I use.","stack.p":"Tools are organised by the role they play in the lifecycle, not displayed as a logo cemetery.",
+    "stack.s1":"Web & capture","stack.s1t":"WordPress · Elementor · HTML/CSS · OVH · Forms · GA4 · GTM","stack.s2":"CRM","stack.s3":"Automation","stack.s4":"Activation","stack.s4t":"Brevo · Sequences · Meta & TikTok Ads","stack.s5":"Reporting",
+    "principles.eyebrow":"Operating principles",
+    "principles.p1":"Define the lifecycle before automating it.","principles.p2":"Treat data quality as conversion infrastructure.","principles.p3":"Make Marketing–Sales handoffs observable.","principles.p4":"Automate repetition, not accountability.",
+    "contact.eyebrow":"05 · Start a conversation","contact.h2":"Tell me where your funnel breaks: site, CRM or handoff.",
+    "contact.p":"A CRM that exists isn't the same as a funnel that works. Send a few details and I'll come back with what I'd audit first, no generic pitch.",
+    "contact.linkedin":"LinkedIn","contact.name":"Full name","contact.email":"Email","contact.company":"Company","contact.need":"What do you need?",
+    "contact.opt1":"CRM audit or CRM from scratch","contact.opt2":"Lead scoring & segmentation","contact.opt3":"Marketing automation setup","contact.opt4":"Website, forms & tracking setup","contact.opt5":"Something else",
+    "contact.message":"Message","contact.submit":"Send","contact.note":"Sent directly and privately. It only goes to Taliha, nowhere else.",
+    "footer.eyebrow":"Available for CRM, Marketing Ops & Demand Gen roles · Paris",
+    "footer.h2":"Let's build the system that turns your leads into a <em>predictable pipeline</em>.",
+    "footer.cven":"Download CV: English","footer.cvfr":"Download CV: Français","footer.email":"Email ↗","footer.tag":"Web · CRM · Automation · Demand Gen"
+  },
+  fr: {
+    "nav.tag":"Site → CRM → Pipeline","nav.services":"Services","nav.demos":"Démos","nav.cases":"Cas clients","nav.stack":"Stack","nav.contact":"Contact","nav.cta":"Démarrer un échange ↗",
+    "hero.kicker":"CRM · Marketing Ops · Demand Gen · Paris",
+    "hero.h1":"Je construis le chemin du <em>premier clic</em> au pipeline prêt pour la vente.",
+    "hero.sub":"Site, formulaires, CRM et automatisation pensés comme un seul système : de la page WordPress et de l'enregistrement DNS jusqu'au workflow HubSpot et à l'alerte commerciale.",
+    "hero.cta1":"Tester le cycle ↓","hero.cta2":"Télécharger le CV ↓",
+    "hero.m1":"contacts nettoyés","hero.m2":"marques gérées du site au CRM","hero.m3":"MQL → SQL",
+    "journey.1":"Capté","journey.2":"Enrichi","journey.3":"Scoré","journey.4":"Nourri","journey.5":"Prêt pour la vente",
+    "services.eyebrow":"00 · Ce que je construis","services.h2":"Quatre compétences.<br>Une seule machine.",
+    "services.p":"Chaque mission commence par un audit de l'existant, du site et du tracking jusqu'au CRM et à la passation commerciale, puis un système conçu pour tourner seul.",
+    "services.s1.h":"Demand Gen & Paid Social",
+    "services.s1.l1":"Campagnes de lead gen multi-marques, B2B & B2C","services.s1.l2":"Meta & TikTok Ads, avec le search en appui","services.s1.l3":"ABM & séquences outbound pour comptes cibles","services.s1.l4":"Landing pages, lead magnets & structure UTM","services.s1.tag":"Attire les bons profils",
+    "services.s2.h":"Web & Martech Ops",
+    "services.s2.l1":"Sites WordPress / Elementor, retouches HTML/CSS","services.s2.l2":"Hébergement OVH, DNS, sous-domaines & redirections","services.s2.l3":"Mises en place en marque blanche & formulaires sécurisés (SSL, anti-spam, consentement RGPD)","services.s2.l4":"Tracking GA4 / GTM, en lien direct avec les développeurs","services.s2.tag":"Le site fait partie du funnel",
+    "services.s3.h":"Architecture CRM",
+    "services.s3.l1":"CRM conçu de zéro : objets, propriétés, pipelines","services.s3.l2":"HubSpot / Salesforce / Odoo / Brevo","services.s3.l3":"Lead scoring, étapes du cycle de vie & passation MQL → SQL","services.s3.l4":"Nettoyage, dédoublonnage & gouvernance des données","services.s3.tag":"Une seule source de vérité",
+    "services.s4.h":"Automatisation & Reporting",
+    "services.s4.l1":"Workflows de nurturing, séquences & alertes commerciales","services.s4.l2":"Intégrations Make, Zapier, n8n & synchronisations API","services.s4.l3":"Dashboards Looker Studio / Power BI","services.s4.l4":"CPL, CAC, LTV & attribution par canal","services.s4.tag":"Fini le pilotage à l'aveugle",
+    "demo.eyebrow":"01 · Systèmes interactifs","demo.h2":"Testez la machine.",
+    "demo.p":"Trois petits modèles de ce qui tourne réellement en coulisses. Changez les entrées, et la logique réagit comme un vrai système.",
+    "demo.tab1.eyebrow":"Lead scoring","demo.tab1.label":"Router un lead →",
+    "demo.tab2.eyebrow":"Attribution","demo.tab2.label":"Vol à l'aveugle vs. funnel tracké →",
+    "demo.tab3.eyebrow":"Segmentation","demo.tab3.label":"Construire un segment en direct →",
+    "demo.scoring.source":"Source d'acquisition","demo.scoring.paid":"Paid","demo.scoring.organic":"Organic","demo.scoring.event":"Event",
+    "demo.scoring.engagement":"Engagement","demo.scoring.low":"Faible","demo.scoring.medium":"Moyen","demo.scoring.high":"Élevé",
+    "demo.scoring.intent":"Intention","demo.scoring.researching":"En recherche","demo.scoring.comparing":"En comparaison","demo.scoring.ready":"Prêt à acheter",
+    "demo.scoring.note":"Modèle de scoring illustratif. La logique reste volontairement visible : un système inspire confiance quand un commercial peut voir exactement pourquoi un lead a atterri là.",
+    "demo.scoring.scorelabel":"Score du lead","demo.scoring.stage":"Étape","demo.scoring.route":"Routage","demo.scoring.action":"Action",
+    "demo.scoring.plusa":"source +","demo.scoring.plusb":"engagement +","demo.scoring.plusc":"intention",
+    "demo.attrib.blindh":"Sans attribution trackée","demo.attrib.blindsub":"Ce que l'équipe créa voit généralement : les campagnes sont parties, des leads sont arrivés. Quel canal a vraiment converti reste une supposition.",
+    "demo.attrib.paid":"Paid","demo.attrib.social":"Social","demo.attrib.organic2":"Organic","demo.attrib.event2":"Event",
+    "demo.attrib.trackedh":"Avec un funnel tracké","demo.attrib.trackedsub":"UTMs, champs source CRM et GA4 reliés à un seul cycle de vie. Cliquez sur un canal pour l'isoler et voir où il atterrit vraiment.",
+    "demo.attrib.note":"Répartition illustrative. Sur un compte réel, cette vue est construite à partir des champs source-du-lead du CRM, des paramètres UTM et du channel grouping GA4, réconciliés en un seul rapport, pour que le budget suive ce qui convertit, pas ce qui semble actif.",
+    "demo.seg.all":"Tous les contacts","demo.seg.highintent":"Intention forte","demo.seg.dormant":"Dormants 60j+","demo.seg.education":"B2C · Étudiants","demo.seg.enterprise":"B2B · Comptes cibles",
+    "demo.seg.matching":"contacts correspondants","demo.seg.ofbase":"de la base",
+    "cases.eyebrow":"02 · Systèmes réalisés","cases.h2":"Trois interventions.<br>Des résultats mesurés.","cases.p":"Chaque cas suit les quatre mêmes étapes : la situation de départ, la mission confiée, ce qui a été concrètement construit, et le résultat mesuré.",
+    "cases.label.situation":"Situation","cases.label.task":"Mission","cases.label.action":"Action","cases.label.result":"Résultat",
+    "cases.c1.h":"Du site au pipeline, pour cinq marques.",
+    "cases.c1.situation":"Cinq marques d'écoles généraient des leads via des sites, formulaires et campagnes distincts, mais les Ventes ne faisaient pas confiance à la passation : les MQL n'étaient pas fiables, et personne ne pilotait le parcours complet du site au CRM.",
+    "cases.c1.task":"Piloter toute la chaîne de demand gen sur les cinq marques, des sites et formulaires jusqu'à HubSpot et Odoo, pour que les Ventes puissent faire confiance à ce qui arrivait dans leur file.",
+    "cases.c1.action":"<b>Prise en charge</b> de toute la chaîne : sites WordPress et configuration OVH, formulaires sécurisés, architecture CRM conçue de zéro, plus de 45K contacts nettoyés, modèle de scoring B2B/B2C, 8 workflows de nurturing, alertes commerciales automatisées et reporting Looker sur tout le pipeline.",
+    "cases.c1.result":"Les Ventes ont commencé à agir sur les MQL au lieu de les remettre en question.","cases.c1.metric":"conversion MQL → SQL",
+    "cases.c1.examplelabel":"Exemple : la campagne de rentrée",
+    "cases.c1.step1":"Création et maintenance des landing pages et sites de programmes de chaque marque sous WordPress et Elementor, avec du HTML/CSS codé à la main là où les templates ne suffisaient pas.",
+    "cases.c1.step2":"Gestion directe de la partie OVH : domaines, enregistrements DNS, sous-domaines et redirections 301, pour que chaque URL de campagne fonctionne et que les anciennes pages gardent leur trafic.",
+    "cases.c1.step3":"Mise en place de formulaires sécurisés (SSL, anti-spam, champs de consentement RGPD), mapping de chaque champ dans HubSpot, et brief des développeurs dès qu'une intégration plus poussée ou une synchronisation API était nécessaire.",
+    "cases.c1.step4":"Participation au volet paid de la campagne de rentrée sur Meta et TikTok, avec Google Ads en appui, et une structure UTM remontant la source directement dans le CRM.",
+    "cases.c1.step5":"Application du scoring B2B/B2C en temps réel à l'arrivée des formulaires, et routage de chaque lead chaud vers les Ventes dès le seuil SQL franchi, réduisant le délai de réponse de plusieurs jours à quelques minutes.",
+    "cases.c1.step6":"Construction d'une séquence email de nurturing pour les prospects indécis, en parallèle d'un parcours de rappels SMS pour les journées portes ouvertes et les dates limites.",
+    "cases.c1.step7":"Encadrement d’un alternant en communication, contenus social media, Meta et TikTok Ads, et création de petits logos et mises à jour visuelles quand un programme avait besoin de sa propre identité.",
+    "cases.c1.step8":"Reporting hebdomadaire du coût par lead et de la conversion MQL → SQL par canal et par marque, pour réallouer les dépenses en cours de campagne vers ce qui convertissait vraiment.",
+    "cases.c2.h":"Lancer une offre en marque blanche auprès de comptes cibles.",
+    "cases.c2.situation":"Un MOOC en marque blanche devait toucher des institutions précises, banques et organismes financiers, là où une prospection généralisée aurait totalement manqué la bonne audience.",
+    "cases.c2.task":"Mettre en place l'offre en marque blanche et une stratégie de prospection B2B ciblée autour d'elle, fondée sur un ciblage par compte plutôt qu'une portée de campagne large.",
+    "cases.c2.action":"<b>Construction</b> du CRM de l'offre de zéro dans HubSpot, configuration de la marque blanche, ciblage ABM et séquences B2B pour des prospects institutionnels nommés, avec une activité par compte visible du premier contact à la conversion.",
+    "cases.c2.result":"12 comptes cibles activés en six mois, avec un engagement bien au-dessus des standards B2B habituels.","cases.c2.metric":"comptes activés",
+    "cases.c2.examplelabel":"Exemple : du salon professionnel à la séquence de compte ciblé",
+    "cases.c2.step1":"Création du logo et de l'identité visuelle du MOOC de la finance durable, puis configuration de l'environnement en marque blanche : instance aux couleurs du partenaire, sous-domaine personnalisé et DNS sur OVH.",
+    "cases.c2.step2":"Conception de la structure HubSpot de zéro (propriétés, niveaux de comptes, pipeline de deals), puis construction de la liste des institutions cibles (banques et organismes financiers) avant toute prospection.",
+    "cases.c2.step3":"Collecte de contacts directement sur des salons du secteur bancaire et financier, en taguant chaque contact dès la capture avec son institution et son rôle plutôt que de le verser dans une liste générique.",
+    "cases.c2.step4":"Inscription de chaque contact dans une séquence au niveau du compte, pas individuelle, pour garder un message cohérent envers tous les interlocuteurs d'une même institution.",
+    "cases.c2.step5":"Déclenchement de contenus de suivi selon les signaux d'engagement : un téléchargement faisait avancer le contact, le silence le basculait vers un parcours de relance plus léger.",
+    "cases.c2.step6":"Consolidation de l'engagement par compte dans une vue CRM unique, pour toujours savoir quelles institutions se réchauffaient et lesquelles étaient silencieuses.",
+    "cases.c3.h":"Faire connaître trois applications.",
+    "cases.c3.situation":"Trois applications mobiles B2B arrivaient sur leur marché avec peu de notoriété et aucun moyen structuré de transformer l'intérêt en leads.",
+    "cases.c3.task":"Construire la notoriété et un flux régulier de leads pour les trois applications, et poser les premières bases CRM pour les suivre.",
+    "cases.c3.action":"<b>Pilotage</b> de la notoriété et de la demand gen des trois applications : positionnement, contenus, réseaux sociaux et campagnes de lancement, lead gen en paid social avec landing pages dédiées, rebranding visuel, et ma première mise en place CRM sous Brevo et Salesforce.",
+    "cases.c3.result":"Les applications ont gagné en visibilité sur leur marché, et les Ventes ont reçu un flux régulier de leads entrants au lieu de contacts ponctuels.","cases.c3.metric":"applications B2B lancées sur leur marché",
+    "cases.c3.examplelabel":"Exemple : du post de lancement au lead qualifié",
+    "cases.c3.step1":"Définition du positionnement et d'un calendrier éditorial pour chaque application : LinkedIn, Instagram, newsletters et posts de lancement produit.",
+    "cases.c3.step2":"Campagnes de lead gen en paid social et sur LinkedIn, chacune renvoyant vers une landing page et un formulaire dédiés.",
+    "cases.c3.step3":"Contribution au rebranding visuel des trois applications (ajustements de logo, visuels stores, templates email) pour une marque cohérente partout.",
+    "cases.c3.step4":"Travail avec les développeurs sur les pages stores et un tracking d'événements simple, pour voir quels canaux amenaient vraiment des utilisateurs actifs.",
+    "cases.c3.step5":"Mise en place de mes premiers workflows CRM : emails d'onboarding et de réactivation sous Brevo, et un pipeline de leads simple dans Salesforce pour que les Ventes suivent chaque lead entrant.",
+    "cases.c3.micro1":"Paid social · LinkedIn",
+    "cases.c3.micro2":"Rebranding",
+    "cases.openrate":"taux d'ouverture","cases.churn":"churn","cases.automations":"automatisations","cases.cta":"Dossier complet des cas clients ↓",
+    "nav.work":"Réalisations",
+    "work.eyebrow":"03 · Réalisations en ligne",
+    "work.h2":"En ligne.<br>Cliquez pour voir.",
+    "work.p":"Des sites et des marques que j'ai construits, trackés et dessinés. Chaque carte ouvre le site en ligne ; dépliez le panneau pour voir ce que j'ai mis en place.",
+    "work.f.all":"Tout",
+    "work.f.tracking":"Tracking (GTM)",
+    "work.f.forms":"Formulaires & UX",
+    "work.f.brand":"Logo & branding",
+    "work.chip.brand":"Logo & branding",
+    "work.chip.gtm":"GTM",
+    "work.chip.forms":"Formulaires",
+    "work.chip.ux":"UX",
+    "work.chip.launch":"Lancement",
+    "work.open":"Voir le site ↗",
+    "work.more":"Ce que j'ai mis en place +",
+    "work.less":"Fermer −",
+    "work.note":"Logos et visuels chargés depuis les sites en ligne. Les marques appartiennent à leurs organisations respectives.",
+    "work.unicours.name":"Unicours",
+    "work.unicours.sub":"Soutien scolaire & cours particuliers",
+    "work.unicours.desc":"Création du logo et de l'identité de marque, puis conception de l'UX des parcours de devis, de contact et de demande de brochure, avec un tracking GTM sur chaque conversion.",
+    "work.unicours.i1":"Logo et identité visuelle, conçus de zéro",
+    "work.unicours.i2":"Formulaires de devis et de contact, segmentés par niveau scolaire",
+    "work.unicours.i3":"GTM : envois de formulaires, téléchargements de brochures, clics vers l'appel",
+    "work.unicours.i4":"UX mobile-first pour les parents, autour d'un seul appel à l'action clair",
+    "work.pnbs.name":"PNBS · Paris Nord Business School",
+    "work.pnbs.sub":"École de commerce en alternance · 12 campus",
+    "work.pnbs.desc":"Implémentation de GTM sur tout le site, création des formulaires brochure, candidature et entreprise, et refonte de l'UX des pages programmes et candidature.",
+    "work.pnbs.i1":"Conteneur GTM : pages vues, envois de formulaires, téléchargements de brochures",
+    "work.pnbs.i2":"Formulaires brochure, candidature et demande entreprise",
+    "work.pnbs.i3":"Données de formulaires mappées dans le CRM pour le scoring et le routage",
+    "work.pnbs.i4":"UX des pages programmes et du parcours de candidature",
+    "work.pnff.name":"PNFF · Paris Nord Food Formation",
+    "work.pnff.sub":"Formations en restauration en alternance",
+    "work.pnff.desc":"Implémentation de GTM, création des formulaires candidat et entreprise (« Je recrute »), et conception de l'UX des pages formations jusqu'à la candidature.",
+    "work.pnff.i1":"Tracking GTM des candidatures et des demandes entreprises",
+    "work.pnff.i2":"Formulaire de candidature",
+    "work.pnff.i3":"Formulaire entreprise « Je recrute » relié au CRM",
+    "work.pnff.i4":"UX des pages formations, jobdatings et candidature",
+    "work.mooc.name":"MOOC de la finance durable",
+    "work.mooc.sub":"Horizon & Beyond · avec l'ILB et l'IFD · lancé en nov. 2024",
+    "work.mooc.desc":"Logo et branding de ce MOOC gratuit et bilingue sur la finance durable, déclinés sur le cours, son lancement et la prospection B2B associée.",
+    "work.mooc.i1":"Logo et identité visuelle",
+    "work.mooc.i2":"Éléments de marque pour les pages du cours et le lancement",
+    "work.mooc.i3":"Supports co-brandés pour les prospects institutionnels",
+    "stack.eyebrow":"04 · Architecture du système","stack.h2":"Stack utilisé.","stack.p":"Les outils sont organisés selon leur rôle dans le cycle de vie, pas affichés comme un cimetière de logos.",
+    "stack.s1":"Web & capture","stack.s1t":"WordPress · Elementor · HTML/CSS · OVH · Formulaires · GA4 · GTM","stack.s2":"CRM","stack.s3":"Automatisation","stack.s4":"Activation","stack.s4t":"Brevo · Séquences · Meta & TikTok Ads","stack.s5":"Reporting",
+    "principles.eyebrow":"Principes de fonctionnement",
+    "principles.p1":"Définir le cycle de vie avant de l'automatiser.","principles.p2":"Traiter la qualité des données comme une infrastructure de conversion.","principles.p3":"Rendre la passation Marketing–Ventes observable.","principles.p4":"Automatiser la répétition, pas la responsabilité.",
+    "contact.eyebrow":"05 · Démarrer un échange","contact.h2":"Dites-moi où votre funnel casse : site, CRM ou passation.",
+    "contact.p":"Un CRM qui existe n'est pas un funnel qui fonctionne. Envoyez quelques détails et je reviendrai avec ce que j'auditerais en premier, sans discours générique.",
+    "contact.linkedin":"LinkedIn","contact.name":"Nom complet","contact.email":"Email","contact.company":"Entreprise","contact.need":"De quoi avez-vous besoin ?",
+    "contact.opt1":"Audit CRM ou CRM de zéro","contact.opt2":"Lead scoring & segmentation","contact.opt3":"Mise en place de marketing automation","contact.opt4":"Site, formulaires & tracking","contact.opt5":"Autre chose",
+    "contact.message":"Message","contact.submit":"Envoyer","contact.note":"Envoyé directement et de façon confidentielle. Le message n'arrive qu'à Taliha, nulle part ailleurs.",
+    "footer.eyebrow":"Disponible pour un poste CRM, Marketing Ops ou Demand Gen · Paris",
+    "footer.h2":"Construisons le système qui transforme vos leads en <em>pipeline prévisible</em>.",
+    "footer.cven":"Télécharger le CV : Anglais","footer.cvfr":"Télécharger le CV : Français","footer.email":"Email ↗","footer.tag":"Web · CRM · Automatisation · Demand Gen"
+  }
+};
+
+let currentLang = "en";
+
+function applyI18n(lang) {
+  currentLang = lang;
+  document.documentElement.lang = lang;
+  const dict = I18N[lang];
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    if (dict[key] !== undefined) el.textContent = dict[key];
+  });
+  document.querySelectorAll("[data-i18n-html]").forEach(el => {
+    const key = el.getAttribute("data-i18n-html");
+    if (dict[key] !== undefined) el.innerHTML = dict[key];
+  });
+  document.querySelectorAll(".lang-toggle button").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.lang === lang);
+  });
+  // re-render dynamic demo bits that use dict text
+  renderAttribution();
+  renderSegmentation();
+  renderScoring();
+}
+
+document.querySelectorAll(".lang-toggle button").forEach(btn => {
+  btn.addEventListener("click", () => applyI18n(btn.dataset.lang));
+});
+
+// ================= DEMO TABS =================
+document.querySelectorAll(".demo-tab").forEach(tab => {
+  tab.addEventListener("click", () => {
+    document.querySelectorAll(".demo-tab").forEach(t => { t.classList.remove("active"); t.setAttribute("aria-selected","false"); });
+    tab.classList.add("active"); tab.setAttribute("aria-selected","true");
+    const target = tab.dataset.tab;
+    document.querySelectorAll(".demo-panel").forEach(p => p.classList.toggle("active", p.dataset.panel === target));
+  });
+});
+
+// ================= DEMO 1: Lead scoring router =================
+const scoringValues = { source: "Event", engagement: "High", intent: "Comparing" };
+const scoringPoints = {
+  source: { Paid: 8, Organic: 14, Event: 18 },
+  engagement: { Low: 8, Medium: 24, High: 36 },
+  intent: { Researching: 10, Comparing: 22, Ready: 34 }
+};
+function stageLabel(stage, lang) {
+  const map = {
+    en: { SQL:"SQL", MQL:"MQL", Nurture:"Nurture", Lead:"Lead" },
+    fr: { SQL:"SQL", MQL:"MQL", Nurture:"Nurturing", Lead:"Lead" }
+  };
+  return map[lang][stage];
+}
+function routeLabel(stage, lang) {
+  const map = {
+    en: { SQL:"Priority sales route", MQL:"Enterprise nurture", Nurture:"Intent-building sequence", Lead:"Awareness track" },
+    fr: { SQL:"Route commerciale prioritaire", MQL:"Nurturing grand compte", Nurture:"Séquence de montée en intention", Lead:"Parcours de notoriété" }
+  };
+  return map[lang][stage];
+}
+function actionLabel(stage, lang) {
+  const map = {
+    en: { SQL:"Notify Sales now", MQL:"Notify Sales within 24h", Nurture:"Re-score after next signal", Lead:"Build engagement" },
+    fr: { SQL:"Alerter les Ventes maintenant", MQL:"Alerter les Ventes sous 24h", Nurture:"Re-scorer au prochain signal", Lead:"Construire l'engagement" }
+  };
+  return map[lang][stage];
+}
+function renderScoring(){
+  const score = Math.min(100, scoringPoints.source[scoringValues.source] + scoringPoints.engagement[scoringValues.engagement] + scoringPoints.intent[scoringValues.intent]);
+  const stage = score >= 76 ? "SQL" : score >= 55 ? "MQL" : score >= 32 ? "Nurture" : "Lead";
+  const $ = id => document.getElementById(id);
+  if (!$("score")) return;
+  $("score").textContent = score;
+  $("scoreBar").style.width = score + "%";
+  $("stage").textContent = stageLabel(stage, currentLang);
+  $("route").textContent = routeLabel(stage, currentLang);
+  $("action").textContent = actionLabel(stage, currentLang);
+  $("logicSource").textContent = scoringValues.source.toLowerCase();
+  $("logicEngagement").textContent = scoringValues.engagement.toLowerCase();
+  $("logicIntent").textContent = scoringValues.intent.toLowerCase();
+  $("logicStage").textContent = stage.toLowerCase();
+}
+document.querySelectorAll("#router .choice").forEach(button => {
+  button.setAttribute("aria-pressed", button.classList.contains("active"));
+  button.addEventListener("click", () => {
+    const group = button.closest("[data-group]");
+    scoringValues[group.dataset.group] = button.dataset.value;
+    group.querySelectorAll(".choice").forEach(item => {
+      item.classList.toggle("active", item === button);
+      item.setAttribute("aria-pressed", item === button);
+    });
+    renderScoring();
+  });
+});
+
+// ================= DEMO 2: Attribution =================
+const attribData = [
+  { key:"paid", ch:{en:"Paid",fr:"Paid"}, pct:22 },
+  { key:"social", ch:{en:"Social",fr:"Social"}, pct:31 },
+  { key:"organic2", ch:{en:"Organic",fr:"Organic"}, pct:18 },
+  { key:"event2", ch:{en:"Event",fr:"Event"}, pct:29 }
+];
+let attribActive = null;
+function renderAttribution(){
+  const wrap = document.getElementById("attribRows");
+  if (!wrap) return;
+  wrap.innerHTML = "";
+  attribData.forEach(row => {
+    const div = document.createElement("div");
+    div.className = "tracked-row";
+    div.style.cursor = "pointer";
+    const isActive = attribActive === row.key;
+    div.innerHTML = `
+      <span class="chan">${row.ch[currentLang]}</span>
+      <span class="tracked-bar"><span style="width:${isActive ? row.pct*2.2 : row.pct}%;${isActive ? "background:var(--signal-dark)" : ""}"></span></span>
+      <span class="val">${row.pct}% SQL</span>
+    `;
+    div.addEventListener("click", () => { attribActive = attribActive === row.key ? null : row.key; renderAttribution(); });
+    wrap.appendChild(div);
+  });
+}
+
+// ================= DEMO 3: Segmentation (simplified) =================
+// Fixed, easy-to-read percentages per segment: no jargon, just "who" and "what happens"
+const SEG_DATA = {
+  all:        { pct: 100 },
+  highintent: { pct: 18 },
+  dormant:    { pct: 27 },
+  education:  { pct: 41 },
+  enterprise: { pct: 22 }
+};
+let segActive = "all";
+
+const segCopy = {
+  en: {
+    all:        { who: "Everyone in the CRM", what: "The full contact base, with no filter applied. This is the starting point before any segment is built." },
+    highintent: { who: "People actively comparing options", what: "They've visited pricing pages, opened recent emails, or requested a demo in the last few days." },
+    dormant:    { who: "People who've gone quiet for 60+ days", what: "No opens, no clicks, no visits. Still in the CRM, but at risk of being forgotten." },
+    education:  { who: "Students & individual buyers (B2C)", what: "Smaller budgets, faster decisions, interested in courses or self-serve offers." },
+    enterprise: { who: "Named B2B accounts", what: "Larger organizations worth a dedicated, account-based approach instead of a generic campaign." }
+  },
+  fr: {
+    all:        { who: "Toute la base CRM", what: "L'ensemble des contacts, sans aucun filtre. C'est le point de départ avant de construire un segment." },
+    highintent: { who: "Des personnes en phase de comparaison active", what: "Elles ont consulté les pages tarifs, ouvert des emails récents, ou demandé une démo ces derniers jours." },
+    dormant:    { who: "Des contacts silencieux depuis 60 jours+", what: "Aucune ouverture, aucun clic, aucune visite. Toujours dans le CRM, mais à risque d'être oubliés." },
+    education:  { who: "Étudiants & particuliers (B2C)", what: "Budgets plus petits, décisions plus rapides, intéressés par des formations ou des offres en self-service." },
+    enterprise: { who: "Comptes B2B ciblés", what: "Des organisations plus grandes qui méritent une approche dédiée type ABM plutôt qu'une campagne générique." }
+  }
+};
+
+const segActionCopy = {
+  en: {
+    all: "No action yet. This is the raw list before segmentation logic is applied.",
+    highintent: "→ What happens next: <b>priority sales sequence</b>. The Sales rep is notified and an SQL nurture track starts automatically.",
+    dormant: "→ What happens next: <b>reactivation flow</b>. A win-back email series goes out automatically after 60 days of silence.",
+    education: "→ What happens next: <b>B2C nurture track</b>. Course-interest content tuned for students and small-budget buyers.",
+    enterprise: "→ What happens next: <b>ABM sequence</b>. Named-account nurture plus a reporting cadence built for leadership."
+  },
+  fr: {
+    all: "Aucune action pour l'instant. C'est la liste brute avant l'application de la logique de segmentation.",
+    highintent: "→ Ce qui se passe ensuite : <b>séquence commerciale prioritaire</b>. Le commercial est notifié et un parcours de nurturing SQL démarre automatiquement.",
+    dormant: "→ Ce qui se passe ensuite : <b>flux de réactivation</b>. Une série d'emails de reconquête part automatiquement après 60 jours de silence.",
+    education: "→ Ce qui se passe ensuite : <b>parcours B2C</b>. Du contenu orienté intérêt-formation, calibré pour étudiants et petits budgets.",
+    enterprise: "→ Ce qui se passe ensuite : <b>séquence ABM</b>. Nurturing de comptes cibles et une cadence de reporting pensée pour la direction."
+  }
+};
+
+const RING_CIRCUMFERENCE = 2 * Math.PI * 78; // r=78
+
+function renderSegmentation(){
+  const ringFill = document.getElementById("segRingFill");
+  if (!ringFill) return;
+  const pct = SEG_DATA[segActive].pct;
+  const offset = RING_CIRCUMFERENCE * (1 - pct / 100);
+  ringFill.style.strokeDasharray = RING_CIRCUMFERENCE;
+  ringFill.style.strokeDashoffset = offset;
+  document.getElementById("segPct").textContent = pct + "%";
+  document.getElementById("segWho").textContent = segCopy[currentLang][segActive].who;
+  document.getElementById("segWhat").textContent = segCopy[currentLang][segActive].what;
+  document.getElementById("segAction").innerHTML = segActionCopy[currentLang][segActive];
+}
+document.querySelectorAll(".seg-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".seg-btn").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    segActive = btn.dataset.seg;
+    renderSegmentation();
+  });
+});
+
+
+// ================= CONTACT FORM =================
+// Static-host friendly: posts to Web3Forms (works on GitHub Pages), which forwards the message by email.
+// "botcheck" is a hidden honeypot: real visitors never tick it, bots do, and Web3Forms drops those.
+const formStatusCopy = {
+  en: { sending: "Sending…", success: "Thank you, your message was sent. I'll get back to you soon.", error: "Something went wrong. Please email taliacerens@gmail.com directly." },
+  fr: { sending: "Envoi en cours…", success: "Merci, votre message a bien été envoyé. Je reviens vers vous rapidement.", error: "Une erreur est survenue. Merci d'écrire directement à taliacerens@gmail.com." }
+};
+
+const leadForm = document.getElementById("leadForm");
+if (leadForm) {
+  leadForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const statusEl = document.getElementById("formStatus");
+    const submitBtn = document.getElementById("submitBtn");
+    const formData = new FormData(leadForm);
+    if (formData.get("botcheck")) return;
+
+    const fail = () => {
+      statusEl.textContent = formStatusCopy[currentLang].error;
+      statusEl.style.color = "#b3413f";
+      submitBtn.disabled = false;
+    };
+    
+
+    statusEl.textContent = formStatusCopy[currentLang].sending;
+    statusEl.style.color = "var(--muted)";
+    submitBtn.disabled = true;
+
+    fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body: JSON.stringify(Object.fromEntries(formData))
+    })
+      .then(r => r.json())
+      .then(res => {
+        if (!res.success) throw new Error(res.message || "error");
+        statusEl.textContent = formStatusCopy[currentLang].success;
+        statusEl.style.color = "var(--blush-deep)";
+        leadForm.reset();
+        submitBtn.disabled = false;
+      })
+      .catch(fail);
+  });
+}
+
+// ================= INIT =================
+renderScoring();
+renderAttribution();
+renderSegmentation();
+
+// ================= LIVE WORK =================
+document.querySelectorAll('.work-filter').forEach(btn => btn.addEventListener('click', () => {
+  document.querySelectorAll('.work-filter').forEach(b => b.classList.toggle('active', b === btn));
+  const f = btn.dataset.filter;
+  document.querySelectorAll('.work-card').forEach(c => c.classList.toggle('hidden', f !== 'all' && !c.dataset.tags.split(' ').includes(f)));
+}));
+document.querySelectorAll('.work-toggle').forEach(btn => btn.addEventListener('click', () => {
+  const card = btn.closest('.work-card');
+  const open = card.classList.toggle('open');
+  btn.setAttribute('aria-expanded', open);
+  const lang = document.documentElement.lang === 'fr' ? 'fr' : 'en';
+  btn.dataset.i18n = open ? 'work.less' : 'work.more';
+  btn.textContent = I18N[lang][btn.dataset.i18n];
+}));
+  </script>
+</body>
+</html>
